@@ -10,7 +10,7 @@ var swiper = new Swiper(".slide-intro", {
 });
 
 var swiper = new Swiper(".slide-studio", {
-  slidesPerView: 1,
+  slidesPerView: 1.2,
   spaceBetween: 20,
   pagination: {
     el: ".slide-studio .swiper-pagination",
@@ -18,7 +18,7 @@ var swiper = new Swiper(".slide-studio", {
   },
   breakpoints: {
     600: {
-      slidesPerView: 2,
+      slidesPerView: 2.2,
       spaceBetween: 20,
     },
     1024: {

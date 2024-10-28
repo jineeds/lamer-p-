@@ -1,342 +1,469 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KRDS themplate</title>
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="페이지 제목" />
-    <meta property="og:description" content="페이지 설명" />
-    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
-    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="페이지 제목" />
-    <meta name="twitter:description" content="페이지 설명" />
-    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
-    <meta name="twitter:domain" content="사이트 명" />
-    <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
-    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../resources/css/styles.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script defer src="../resources/js/include.js"></script>
-    <script defer src="../resources/js/ui-pattern.js"></script>
-    <script defer src="../resources/js/ui-swiper.js"></script>
-  </head>
-  <body>
-    <div id="skip-nav">
-      <a href="#gnb">메뉴 바로가기</a>
-      <a href="#container">본문 바로가기</a>
-    </div>
-    <div id="wrap">
-      <header id="header" class="">
-        <div class="inner">
-          <h1 id="logo">
-            <a href="#">
-              <span>우리자산운용</span>
-            </a>
-          </h1>
-          <nav id="gnb" class="gnb">
-            <ul class="gnb__depth1">
-              <li>
-                <a href="#">
-                  <span>menu1</span>
-                </a>
-                <ul class="gnb__depth2">
-                  <li><a href="#">menu1-1</a></li>
-                  <li><a href="#">menu1-2</a></li>
-                  <li><a href="#">menu1-3</a></li>
-                  <li><a href="#">menu1-4</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#"><span>menu2</span></a>
-                <ul class="gnb__depth2">
-                  <li><a href="#">menu2-1</a></li>
-                  <li><a href="#">menu2-2</a></li>
-                  <li><a href="#">menu2-3</a></li>
-                  <li><a href="#">menu2-4</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#"><span>menu3</span></a>
-                <ul class="gnb__depth2">
-                  <li><a href="#">menu3-1</a></li>
-                  <li><a href="#">menu3-2</a></li>
-                  <li><a href="#">menu3-3</a></li>
-                  <li><a href="#">menu3-4</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="#"><span>menu4</span></a>
-                <ul class="gnb__depth2">
-                  <li><a href="#">menu4-1</a></li>
-                  <li><a href="#">menu4-2</a></li>
-                  <li><a href="#">menu4-3</a></li>
-                  <li><a href="#">menu4-4</a></li>
-                </ul>
-              </li>
-            </ul>
-          </nav>
-          <div class="util">
-            <!-- active 추가시 활성화 -->
-            <div class="lang">
-              <button class="lang__btn">kor</button>
-              <ul class="lang__lst">
-                <li>kor</li>
-                <li>eng</li>
-              </ul>
-            </div>
-            <button class="search">
-              <span class="blind">검색</span>
-            </button>
-            <button class="all-menu">
-              <span class="blind">전체메뉴</span>
-            </button>
-          </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KRDS themplate</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="페이지 제목" />
+        <meta property="og:description" content="페이지 설명" />
+        <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
+        <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="페이지 제목" />
+        <meta name="twitter:description" content="페이지 설명" />
+        <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+        <meta name="twitter:domain" content="사이트 명" />
+        <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="../resources/css/pattern_css.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script defer src="../resources/js/include.js"></script>
+        <script defer src="../resources/js/ui-pattern.js"></script>
+        <script defer src="../resources/js/ui-swiper.js"></script>
+    </head>
+    <body>
+        <div id="skip-nav">
+            <a href="#gnb">메뉴 바로가기</a>
+            <a href="#container">본문 바로가기</a>
         </div>
-        <!-- active 추가시 활성화 -->
-        <nav id="nav-all" class="">
-          <ul class="gnb__depth1">
-            <li>
-              <a href="#">
-                <span>menu1</span>
-              </a>
-              <ul class="gnb__depth2">
-                <li><a href="#">menu1-1</a></li>
-                <li><a href="#">menu1-2</a></li>
-                <li><a href="#">menu1-3</a></li>
-                <li><a href="#">menu1-4</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#"><span>menu2</span></a>
-              <ul class="gnb__depth2">
-                <li><a href="#">menu2-1</a></li>
-                <li><a href="#">menu2-2</a></li>
-                <li><a href="#">menu2-3</a></li>
-                <li><a href="#">menu2-4</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#"><span>menu3</span></a>
-              <ul class="gnb__depth2">
-                <li><a href="#">menu3-1</a></li>
-                <li><a href="#">menu3-2</a></li>
-                <li><a href="#">menu3-3</a></li>
-                <li><a href="#">menu3-4</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#"><span>menu4</span></a>
-              <ul class="gnb__depth2">
-                <li><a href="#">menu4-1</a></li>
-                <li><a href="#">menu4-2</a></li>
-                <li><a href="#">menu4-3</a></li>
-                <li><a href="#">menu4-4</a></li>
-              </ul>
-            </li>
-          </ul>
+        <div id="wrap">
+            <header id="header" class="">
+                <div class="inner">
+                    <h1 id="logo">
+                        <a href="#">
+                            <span>logo</span>
+                        </a>
+                    </h1>
+                    <nav id="gnb" class="gnb">
+                        <ul class="gnb__depth1">
+                            <li>
+                                <a href="#">
+                                    <span>menu1</span>
+                                </a>
+                                <ul class="gnb__depth2">
+                                    <li><a href="#">menu1-1</a></li>
+                                    <li><a href="#">menu1-2</a></li>
+                                    <li><a href="#">menu1-3</a></li>
+                                    <li><a href="#">menu1-4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>menu2</span></a>
+                                <ul class="gnb__depth2">
+                                    <li><a href="#">menu2-1</a></li>
+                                    <li><a href="#">menu2-2</a></li>
+                                    <li><a href="#">menu2-3</a></li>
+                                    <li><a href="#">menu2-4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>menu3</span></a>
+                                <ul class="gnb__depth2">
+                                    <li><a href="#">menu3-1</a></li>
+                                    <li><a href="#">menu3-2</a></li>
+                                    <li><a href="#">menu3-3</a></li>
+                                    <li><a href="#">menu3-4</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span>menu4</span></a>
+                                <ul class="gnb__depth2">
+                                    <li><a href="#">menu4-1</a></li>
+                                    <li><a href="#">menu4-2</a></li>
+                                    <li><a href="#">menu4-3</a></li>
+                                    <li><a href="#">menu4-4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="util">
+                        <!-- active 추가시 활성화 -->
+                        <div class="lang">
+                            <button class="lang__btn">kor</button>
+                            <ul class="lang__lst">
+                                <li>kor</li>
+                                <li>eng</li>
+                            </ul>
+                        </div>
+                        <button class="search">
+                            <span class="blind">검색</span>
+                        </button>
+                        <button class="all-menu">
+                            <span class="blind">전체메뉴</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- active 추가시 활성화 -->
+                <nav id="nav-all" class="">
+                    <ul class="gnb__depth1">
+                        <li>
+                            <a href="#">
+                                <span>menu1</span>
+                            </a>
+                            <ul class="gnb__depth2">
+                                <li><a href="#">menu1-1</a></li>
+                                <li><a href="#">menu1-2</a></li>
+                                <li><a href="#">menu1-3</a></li>
+                                <li><a href="#">menu1-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>menu2</span></a>
+                            <ul class="gnb__depth2">
+                                <li><a href="#">menu2-1</a></li>
+                                <li><a href="#">menu2-2</a></li>
+                                <li><a href="#">menu2-3</a></li>
+                                <li><a href="#">menu2-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>menu3</span></a>
+                            <ul class="gnb__depth2">
+                                <li><a href="#">menu3-1</a></li>
+                                <li><a href="#">menu3-2</a></li>
+                                <li><a href="#">menu3-3</a></li>
+                                <li><a href="#">menu3-4</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#"><span>menu4</span></a>
+                            <ul class="gnb__depth2">
+                                <li><a href="#">menu4-1</a></li>
+                                <li><a href="#">menu4-2</a></li>
+                                <li><a href="#">menu4-3</a></li>
+                                <li><a href="#">menu4-4</a></li>
+                            </ul>
+                        </li>
+                    </ul>
 
-          <button class="close">
-            <span class="">전체메뉴 닫기</span>
-          </button>
-        </nav>
-      </header>
-      <div class="slide">
-        <!-- Slider main container -->
-        <div class="swiper slide-intro">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <a href="#">
-                <picture>
-                  <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
-                  <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
-                  <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
-                </picture>
-                <div class="text-area">
-                  <div class="inner">
-                    <strong class="text-area__tit">슬라이드 제목</strong>
-                    <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <span class="text-area__goto text-area__goto--hidden">바로가기</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <picture>
-                  <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
-                  <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
-                  <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
-                </picture>
-                <div class="text-area">
-                  <div class="inner">
-                    <strong class="text-area__tit">슬라이드 제목</strong>
-                    <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <span class="text-area__goto text-area__goto--hidden">바로가기</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <picture>
-                  <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
-                  <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
-                  <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
-                </picture>
-                <div class="text-area">
-                  <div class="inner">
-                    <strong class="text-area__tit">슬라이드 제목</strong>
-                    <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <span class="text-area__goto text-area__goto--hidden">바로가기</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <picture>
-                  <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
-                  <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
-                  <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
-                </picture>
-                <div class="text-area">
-                  <div class="inner">
-                    <strong class="text-area__tit">슬라이드 제목</strong>
-                    <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <span class="text-area__goto text-area__goto--hidden">바로가기</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-            <div class="swiper-slide">
-              <a href="#">
-                <picture>
-                  <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
-                  <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
-                  <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                  <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
-                </picture>
-                <div class="text-area">
-                  <div class="inner">
-                    <strong class="text-area__tit">슬라이드 제목</strong>
-                    <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                    <span class="text-area__goto text-area__goto--hidden">바로가기</span>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <!-- If we need pagination -->
-          <div class="swiper-pagination"></div>
+                    <button class="close">
+                        <span class="">전체메뉴 닫기</span>
+                    </button>
+                </nav>
+            </header>
+            <div class="slide">
+                <!-- Slider main container -->
+                <div class="swiper slide-intro">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="../resources/images/pattern/common/lm_sample.avif" />
+                                    <source srcset="../resources/images/pattern/common/lm_sample.avif" />
+                                    <source srcset="../resources/images/pattern/common/lm_sample.avif" />
+                                    <img src="../resources/images/pattern/common/lm_sample.avif" alt="Flowers" />
+                                </picture>
+                                <div class="text-area">
+                                    <div class="inner">
+                                        <strong class="text-area__tit">SPECIAL <br />Genaissance de la Me</strong>
+                                        <p class="text-area__cont">제네상스 드 라메르</p>
+                                        <span class="text-area__goto text-area__goto--hidden">READ MORE</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="../resources/images/pattern/common/main1.avif" media="(min-width: 1024px)" />
+                                    <source srcset="../resources/images/pattern/common/main1.avif" media="(min-width: 600px)" />
+                                    <source srcset="../resources/images/pattern/common/main1.avif" />
+                                    <img src="../resources/images/pattern/common/main1.avif" alt="Flowers" />
+                                </picture>
+                                <div class="text-area">
+                                    <div class="inner">
+                                        <strong class="text-area__tit">SPECIAL <br />Genaissance de la Me</strong>
+                                        <p class="text-area__cont">제네상스 드 라메르</p>
+                                        <span class="text-area__goto text-area__goto--hidden">READ MORE</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="../resources/images/pattern/common/lm_mian_sample2.avif" />
+                                    <source srcset="../resources/images/pattern/common/lm_mian_sample2.avif" />
+                                    <source srcset="../resources/images/pattern/common/lm_mian_sample2.avif" />
+                                    <img src="../resources/images/pattern/common/lm_mian_sample2.avif" alt="Flowers" />
+                                </picture>
+                                <div class="text-area">
+                                    <div class="inner">
+                                        <strong class="text-area__tit">SPECIAL <br />Genaissance de la Me</strong>
+                                        <p class="text-area__cont">제네상스 드 라메르</p>
+                                        <span class="text-area__goto text-area__goto--hidden">READ MORE</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- <div class="swiper-slide">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
+                                    <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
+                                    <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                    <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
+                                </picture>
+                                <div class="text-area">
+                                    <div class="inner">
+                                        <strong class="text-area__tit">슬라이드 제목</strong>
+                                        <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        <span class="text-area__goto text-area__goto--hidden">바로가기</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#">
+                                <picture>
+                                    <source srcset="https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 1024px)" />
+                                    <source srcset="https://images.unsplash.com/photo-1511275539165-cc46b1ee89bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" media="(min-width: 600px)" />
+                                    <source srcset="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                                    <img src="https://images.unsplash.com/photo-1516139008210-96e45dccd83b?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Flowers" />
+                                </picture>
+                                <div class="text-area">
+                                    <div class="inner">
+                                        <strong class="text-area__tit">슬라이드 제목</strong>
+                                        <p class="text-area__cont">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        <span class="text-area__goto text-area__goto--hidden">바로가기</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> -->
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-          <!-- If we need navigation buttons -->
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+            <section class="best">
+                <h3>BEST SELLERS</h3>
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <!-- <div class="title"> -->
+                        <!-- 카드 1 -->
+                        <div class="best_card">
+                            <div class="best_img">
+                                <img src="../resources/images/pattern/common/best img.avif" alt="베스트 임시" />
+                            </div>
+                            <div class="best_info">
+                                <strong>CREAM DE LA MER</strong>
+                                <strong>크렘 드 라메르</strong>
+                                <p>리치한 질감과 촉촉한 마무리의 오리지널 럭셔리 크림</p>
+                                <em>120,000원 / 3size</em>
+                            </div>
+                            <button class="slide-btn">
+                                <p>01 / 04</p>
+                            </button>
+                        </div>
+                        <!-- 카드2 -->
+                        <div class="best_card">
+                            <div class="best_img">
+                                <img src="../resources/images/pattern/common/best img2.avif" alt="베스트 임시" />
+                            </div>
+                            <div class="best_info">
+                                <strong>CREAM DE LA MER</strong>
+                                <strong>크렘 드 라메르</strong>
+                                <p>리치한 질감과 촉촉한 마무리의 오리지널 럭셔리 크림</p>
+                                <em>120,000원 / 3size</em>
+                            </div>
+                            <button class="slide-btn">
+                                <p>01 / 04</p>
+                            </button>
+                        </div>
+                        <!-- 카드3 -->
+                        <div class="best_card">
+                            <div class="best_img">
+                                <img src="../resources/images/pattern/common/best img3.avif" alt="베스트 임시" />
+                            </div>
+                            <div class="best_info">
+                                <strong>CREAM DE LA MER</strong>
+                                <strong>크렘 드 라메르</strong>
+                                <p>리치한 질감과 촉촉한 마무리의 오리지널 럭셔리 크림</p>
+                                <em>120,000원 / 3size</em>
+                            </div>
+                            <button class="slide-btn">
+                                <p>01 / 04</p>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--sec2 face type -->
+            <section class="face_type">
+                <div class="face_title">
+                    <h3>피부 타입별 모이스춰라이저</h3>
+                </div>
+                <div class="type_img">
+                    <img src="../resources/images/pattern/common/lamer_model.avif" alt="라메르코리아 대표모델" />
+                    <p>깊은 보슴감과 극강의 안티에이징을 선사하는 피부의 기적</p>
+                    <button>+</button>
+                </div>
+            </section>
+
+            <!-- sec3 category -->
+            <!-- 좌우 슬라이드로 만들거! -->
+            <section class="category_card">
+                <div class="category">
+                    <h3>SHOP BY CATEGORY</h3>
+                </div>
+                <div class="category_img">
+                    <img src="../resources/images/pattern/common/lm_sample.avif" alt="카테고리별 임시" />
+                    <div class="category_info">
+                        <strong>EYE TREATMENTS</strong>
+                        <p>아이 트리트먼트</p>
+                    </div>
+                    <button>+</button>
+                </div>
+                <div class="category_img">
+                    <img src="../resources/images/pattern/common/lm_sample.avif" alt="카테고리별 임시" />
+                    <div class="category_info">
+                        <strong>EYE TREATMENTS</strong>
+                        <p>아이 트리트먼트</p>
+                    </div>
+                    <button>+</button>
+                </div>
+                <div class="category_img">
+                    <img src="../resources/images/pattern/common/lm_sample.avif" alt="카테고리별 임시" />
+                    <div class="category_info">
+                        <strong>EYE TREATMENTS</strong>
+                        <p>아이 트리트먼트</p>
+                    </div>
+                    <button>+</button>
+                </div>
+            </section>
+            <!-- sec4 gift card -->
+            <section class="gift_card">
+                <div class="gift_title">
+                    <h3>GIFT SET</h3>
+                </div>
+                <video class="holiday_video" autoplay muted loop>
+                    <source src="../resources/images/pattern/common/holiday_video.mp4" type="video/mp4" />
+                </video>
+                <div class="gift_text">
+                    <p>모바일에서만 단독으로 판매하는 세트 상품을 만나보세요.</p>
+                    <button>+</button>
+                </div>
+            </section>
+
+            <!-- sec5 online service -->
+            <section class="service">
+                <div class="service_main">
+                    <h3>특별한 서비스 혜택</h3>
+                    <div class="ser_item">
+                        <img src="../resources/images/pattern/common/ser_1.avif" alt="SAMPLES WITH LOVE" />
+                        <p>AMPLES WITH LOVE</p>
+                        <img src="../resources/images/pattern/common/ser_1.avif" alt="WELCOME GIFT" />
+                        <div class="item_text">WELCOME GIFT</div>
+                        <img src="../resources/images/pattern/common/ser_1.avif" alt="SKIN CARE" />
+                        <div class="item_text">SKIN CARE</div>
+                        <img src="../resources/images/pattern/common/ser_1.avif" alt="LIVE CHAT" />
+                        <div class="item_text">LIVE CHAT</div>
+                    </div>
+                </div>
+            </section>
+
+            <main id="container">
+                <!-- 스튜디오 섹션 -->
+                <section class="sec-g sec-studio">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">섹션 타이틀</h2>
+                        <div class="sec-g__cont">
+                            <div class="swiper slide-studio">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                                            <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                                            <em>2024.10.16</em>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                                            <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                                            <em>2024.10.16</em>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                                            <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                                            <em>2024.10.16</em>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                                            <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                                            <em>2024.10.16</em>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                                            <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                                            <em>2024.10.16</em>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                                            <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                                            <em>2024.10.16</em>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="#">
+                                            <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
+                                            <strong>미국 공모주 정말 쉽게 받는 방법</strong>
+                                            <em>2024.10.16</em>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="sec-g__more">더보기</a>
+                    </div>
+                </section>
+
+                <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
+                <section class="sec-g sec-news bg-gray">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">섹션 타이틀</h2>
+                        <div class="sec-g__cont">컨텐츠</div>
+                        <a href="#" class="sec-g__more">더보기</a>
+                    </div>
+                </section>
+
+                <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
+                <section class="sec-g sec-news">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">섹션 타이틀</h2>
+                        <div class="sec-g__cont">컨텐츠</div>
+                        <a href="#" class="sec-g__more">더보기</a>
+                    </div>
+                </section>
+
+                <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
+                <section class="sec-g sec-news bg-gray">
+                    <div class="inner">
+                        <h2 class="sec-g__tit">섹션 타이틀</h2>
+                        <div class="sec-g__cont">컨텐츠</div>
+                        <a href="#" class="sec-g__more">더보기</a>
+                    </div>
+                </section>
+            </main>
+            <footer id="footer" include-html="./layout/footer.html"></footer>
         </div>
-      </div>
-      <main id="container">
-        <!-- 스튜디오 섹션 -->
-        <section class="sec-g sec-studio">
-          <div class="inner">
-            <h2 class="sec-g__tit">섹션 타이틀</h2>
-            <div class="sec-g__cont">
-              <div class="swiper slide-studio">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
-                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
-                      <em>2024.10.16</em>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
-                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
-                      <em>2024.10.16</em>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
-                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
-                      <em>2024.10.16</em>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
-                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
-                      <em>2024.10.16</em>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
-                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
-                      <em>2024.10.16</em>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
-                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
-                      <em>2024.10.16</em>
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#">
-                      <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
-                      <strong>미국 공모주 정말 쉽게 받는 방법</strong>
-                      <em>2024.10.16</em>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a href="#" class="sec-g__more">더보기</a>
-          </div>
-        </section>
-
-        <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
-        <section class="sec-g sec-news bg-gray">
-          <div class="inner">
-            <h2 class="sec-g__tit">섹션 타이틀</h2>
-            <div class="sec-g__cont">컨텐츠</div>
-            <a href="#" class="sec-g__more">더보기</a>
-          </div>
-        </section>
-
-        <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
-        <section class="sec-g sec-news">
-          <div class="inner">
-            <h2 class="sec-g__tit">섹션 타이틀</h2>
-            <div class="sec-g__cont">컨텐츠</div>
-            <a href="#" class="sec-g__more">더보기</a>
-          </div>
-        </section>
-
-        <!-- ㄴㅠㅅㅡㅅㅔㄱㅅㅕㄴ -->
-        <section class="sec-g sec-news bg-gray">
-          <div class="inner">
-            <h2 class="sec-g__tit">섹션 타이틀</h2>
-            <div class="sec-g__cont">컨텐츠</div>
-            <a href="#" class="sec-g__more">더보기</a>
-          </div>
-        </section>
-      </main>
-      <footer id="footer" include-html="./layout/footer.html"></footer>
-    </div>
-  </body>
+    </body>
 </html>
