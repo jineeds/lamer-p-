@@ -653,22 +653,15 @@ legend {
   cursor: pointer;
 }
 
-.face_type h3 {
+.sec-type .sec-g__tit {
   margin-top: 30px;
   margin-bottom: 5px;
   padding: 20px;
 }
-
-.type_img img {
+.sec-type .sec-g__cont img {
   width: 100%;
   border-radius: 15px;
   padding: 10px;
-}
-
-@media (min-width: 600px) and (max-width: 1023px) {
-  .face_type {
-    padding: 0 30px;
-  }
 }
 
 .category_card {
@@ -701,7 +694,7 @@ legend {
   margin: 4px 0 0;
 }
 
-.gift_card {
+.sec-gift {
   width: 390px;
   height: 370px;
   display: flex;
@@ -709,22 +702,21 @@ legend {
   align-items: left;
   padding: 0 10px;
 }
-.gift_card .gift_title h3 {
+.sec-gift .seg-__tit {
   margin-top: 30px;
   margin-bottom: 5px;
   padding: 20px;
 }
-.gift_card .gift_text p {
+.sec-gift .sec-g__cont p {
   padding: 10px;
 }
 
-.service h3 {
+.sec-service .sec-g__tit {
   margin-top: 250px;
   margin-bottom: 5px;
   padding: 20px;
 }
-
-.card-container {
+.sec-service .sec-g__cont {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -732,10 +724,10 @@ legend {
   margin: 0 auto;
   margin-top: 20px;
 }
-.card-container .card {
+.sec-service .sec-g__cont .sec-g__card {
   padding: 20px;
 }
-.card-container .card p {
+.sec-service .sec-g__cont .sec-g__card p {
   margin-top: 10px;
   font-size: 14px;
   text-align: center;
@@ -868,13 +860,12 @@ legend {
   background-color: #123456; /* Adjust active dot color */
 }
 
-.face_title h3 {
+.sec-type .sec-g__tit {
   font-size: 25px;
   color: #0e2b5e;
   height: 58px;
 }
-
-.type_img p {
+.sec-type .sec-g__cont p {
   font-size: 13px;
   margin-left: 10px;
 }
@@ -907,12 +898,12 @@ legend {
   border-radius: 15px;
 }
 
-.gift_card .gift_title h3 {
+.sec-gift .seg-__tit {
   font-size: 25px;
   color: #0e2b5e;
   height: 58px;
 }
-.gift_card .holiday_video {
+.sec-gift .sec-g__cont {
   width: 100%;
   height: auto;
   background-size: cover;
@@ -920,17 +911,16 @@ legend {
   transition: opacity 0.3s ease;
   margin-top: 10px;
 }
-.gift_card .gift_text p {
+.sec-gift .sec-g__cont p {
   font-size: 13px;
 }
 
-.service h3 {
+.sec-service .sec-g__tit {
   font-size: 25px;
   color: #0e2b5e;
   height: 58px;
 }
-
-.card {
+.sec-service .sec-g__card {
   width: calc(50% - 10px); /* 50% width minus half the gap to center the cards */
   display: flex;
   flex-direction: column;
@@ -940,7 +930,7 @@ legend {
   color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-.card img {
+.sec-service .sec-g__card img {
   width: 100%;
   border-radius: 10px; /* Adjust as needed for rounded corners */
 }

@@ -102,14 +102,16 @@
 }
 
 // section2-face type
-.face_title h3 {
-    font-size: 25px;
-    color: $primary-80;
-    height: 58px;
-}
-.type_img p {
-    font-size: 13px;
-    margin-left: 10px;
+.sec-type {
+    .sec-g__tit {
+        font-size: 25px;
+        color: $primary-80;
+        height: 58px;
+    }
+    .sec-g__cont p {
+        font-size: 13px;
+        margin-left: 10px;
+    }
 }
 
 // section3-category
@@ -144,14 +146,14 @@
 }
 
 // gift card
-.gift_card {
-    .gift_title h3 {
+.sec-gift {
+    .seg-__tit {
         font-size: 25px;
         color: $primary-80;
         height: 58px;
     }
 
-    .holiday_video {
+    .sec-g__cont {
         width: 100%;
         height: auto;
         background-size: cover;
@@ -159,34 +161,50 @@
         transition: opacity 0.3s ease;
         margin-top: 10px;
     }
-    .gift_text p {
+    .sec-g__cont p {
         font-size: 13px;
     }
 }
 
 // service
 
-.service h3 {
-    font-size: 25px;
-    color: $primary-80;
-    // width: 200px;
-    height: 58px;
-}
-
-.card {
-    width: calc(50% - 10px); /* 50% width minus half the gap to center the cards */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #144d37;
-    border-radius: 20px;
-    color: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    img {
-        width: 100%;
-        border-radius: 10px; /* Adjust as needed for rounded corners */
+.sec-service {
+    .sec-g__tit {
+        font-size: 25px;
+        color: $primary-80;
+        // width: 200px;
+        height: 58px;
+    }
+    .sec-g__card {
+        width: calc(50% - 10px); /* 50% width minus half the gap to center the cards */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #144d37;
+        border-radius: 20px;
+        color: white;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        img {
+            width: 100%;
+            border-radius: 10px; /* Adjust as needed for rounded corners */
+        }
     }
 }
+
+// .card {
+//     width: calc(50% - 10px); /* 50% width minus half the gap to center the cards */
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     background-color: #144d37;
+//     border-radius: 20px;
+//     color: white;
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+//     img {
+//         width: 100%;
+//         border-radius: 10px; /* Adjust as needed for rounded corners */
+//     }
+// }
 
 // tablet
 @media screen and (min-width: 600px) {
