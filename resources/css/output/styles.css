@@ -617,30 +617,31 @@ legend {
   height: auto; /* Maintains aspect ratio */
 }
 
-.best_card {
+.slide-best {
   background-color: #f9f9f9;
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.image-container {
+.slide-best .sec-g__cont {
   position: relative;
   width: 100%;
   text-align: center;
 }
-.image-container img {
+.slide-best .sec-g__cont img {
   width: 100%;
   border-radius: 15px;
 }
-.image-container .page-indicator {
+
+.page-indicator {
   position: absolute;
   top: 10px;
   right: 10px;
   padding: 2px 8px;
   border-radius: 12px;
 }
-.image-container .pagination-dots {
+
+.pagination-dots {
   margin-top: 15px;
 }
 
@@ -695,8 +696,8 @@ legend {
 }
 
 .sec-gift {
-  width: 390px;
-  height: 370px;
+  width: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: left;
@@ -712,7 +713,6 @@ legend {
 }
 
 .sec-service .sec-g__tit {
-  margin-top: 250px;
   margin-bottom: 5px;
   padding: 20px;
 }
@@ -736,6 +736,7 @@ legend {
 .sec-g {
   overflow: hidden;
   padding: 10vw 0;
+  margin: 20px;
 }
 .sec-g__tit {
   padding-bottom: 2.34375vw;
@@ -816,42 +817,43 @@ legend {
   display: none;
 }
 
-.bestseller-section {
+.sec-bestseller .sec-g_tit {
+  font-size: 30px;
+  color: #123456; /* Adjust color as needed */
+  margin-bottom: 10px;
+}
+
+.slide-best {
   max-width: 370px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
   justify-content: space-between;
   align-items: center;
 }
-.bestseller-section h2 {
-  font-size: 30px;
-  color: #123456; /* Adjust color as needed */
-  margin-bottom: 10px;
-}
-.bestseller-section .card-content h3 {
+.slide-best .text-ara strong {
   font-size: 16px;
   color: #000;
   font-weight: bold;
   margin: 15px 0 5px;
 }
-.bestseller-section .card-content h3 span {
+.slide-best .text-ara span {
   font-weight: normal;
   font-size: 14px;
   color: #555;
 }
-.bestseller-section .card-content p {
+.slide-best .text-ara p {
   font-size: 14px;
   color: #777;
 }
-.bestseller-section .page-indicator {
+.slide-best .page-indicator {
   background: rgba(0, 0, 0, 0.1);
   color: #fff;
   font-size: 12px;
 }
-.bestseller-section .dot.active {
+.slide-best .dot.active {
   background-color: #144d37; /* Adjust active dot color */
 }
-.bestseller-section .pagination-dots {
+.slide-best .pagination-dots {
   display: flex;
   justify-content: center;
 }
@@ -960,10 +962,10 @@ legend {
   .type_img p {
     font-size: 1.875rem;
   }
-  .gift_card {
+  .sec-gift {
     width: 100%;
     height: 100vh;
-    padding: 0px 30px;
+    padding: 0px 20px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -989,7 +991,7 @@ legend {
     font-size: 19px;
     text-align: center;
   }
-  .bestseller-section {
+  .sec-bestseller {
     max-width: 100%;
     display: flex;
     font-family: Arial, sans-serif;
@@ -997,14 +999,14 @@ legend {
     justify-content: space-between;
     align-items: center;
   }
-  .bestseller-section .best_card {
+  .sec-bestseller .sec-g__cont {
     background-color: #f9f9f9;
     border-radius: 20px;
     padding: 20px;
     margin-right: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
-  .bestseller-section h2 {
+  .sec-bestseller .sec-g__tit {
     font-size: 30px;
     color: #123456;
     padding: 0 50px;
