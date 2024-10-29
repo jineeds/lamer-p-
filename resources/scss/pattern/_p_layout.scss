@@ -325,6 +325,11 @@
     border-radius: 15px;
     padding: 10px;
 }
+.face_type {
+    @include tablet {
+        padding: 0 $p-tablet;
+    }
+}
 
 // section3-category
 .category_card {
@@ -359,12 +364,13 @@
 
 // section3-giftcard
 .gift_card {
-    width: 370px;
+    width: 390px;
     height: 370px;
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin: 10px;
+    padding: 0 10px;
+    // margin: 10px;
     .gift_title h3 {
         margin-top: 30px;
         margin-bottom: 5px;

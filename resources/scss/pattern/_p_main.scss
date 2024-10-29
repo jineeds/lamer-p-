@@ -191,7 +191,59 @@
 // tablet
 @media screen and (min-width: 600px) {
     .slide-intro .swiper-slide img {
-        height: 70vh;
+        height: 100vh;
+        width: 100%;
+    }
+    .slide-intro .swiper-slide .text-area {
+        text-align: center;
+        left: 50%;
+        top: 50%;
+        .text-area__tit {
+            font-size: 40px;
+        }
+        .text-area__cont {
+            font-size: 2rem;
+        }
+        .text-area__goto {
+            margin-top: 30px;
+        }
+        .inner {
+            padding: 0px 15px;
+        }
+    }
+
+    .type_img p {
+        font-size: 1.875rem;
+    }
+    .gift_card {
+        width: 100%;
+        height: 100vh;
+        padding: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        // margin: 10px;
+    }
+    .gift_card .gift_text p {
+        font-size: 1.875rem;
+    }
+    .service h3 {
+        padding: 20px;
+        margin-top: 0;
+    }
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+        margin-top: 20px;
+        padding: 0 30px;
+        .card p {
+            margin-top: 10px;
+            font-size: 19px;
+            text-align: center;
+        }
     }
 }
 

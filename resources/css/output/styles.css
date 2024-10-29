@@ -665,6 +665,12 @@ legend {
   padding: 10px;
 }
 
+@media (min-width: 600px) and (max-width: 1023px) {
+  .face_type {
+    padding: 0 30px;
+  }
+}
+
 .category_card {
   width: 370px;
   border-radius: 15px;
@@ -696,12 +702,12 @@ legend {
 }
 
 .gift_card {
-  width: 370px;
+  width: 390px;
   height: 370px;
   display: flex;
   flex-direction: column;
   align-items: left;
-  margin: 10px;
+  padding: 0 10px;
 }
 .gift_card .gift_title h3 {
   margin-top: 30px;
@@ -941,7 +947,57 @@ legend {
 
 @media screen and (min-width: 600px) {
   .slide-intro .swiper-slide img {
-    height: 70vh;
+    height: 100vh;
+    width: 100%;
+  }
+  .slide-intro .swiper-slide .text-area {
+    text-align: center;
+    left: 50%;
+    top: 50%;
+  }
+  .slide-intro .swiper-slide .text-area .text-area__tit {
+    font-size: 40px;
+  }
+  .slide-intro .swiper-slide .text-area .text-area__cont {
+    font-size: 2rem;
+  }
+  .slide-intro .swiper-slide .text-area .text-area__goto {
+    margin-top: 30px;
+  }
+  .slide-intro .swiper-slide .text-area .inner {
+    padding: 0px 15px;
+  }
+  .type_img p {
+    font-size: 1.875rem;
+  }
+  .gift_card {
+    width: 100%;
+    height: 100vh;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  .gift_card .gift_text p {
+    font-size: 1.875rem;
+  }
+  .service h3 {
+    padding: 20px;
+    margin-top: 0;
+  }
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 0 30px;
+  }
+  .card-container .card p {
+    margin-top: 10px;
+    font-size: 19px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1024px) {
