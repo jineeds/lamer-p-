@@ -50,21 +50,69 @@
         display: none;
     }
 }
+// .best_card {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+// section1-best sellers
+.bestseller-section {
+    // display: flex;
+    max-width: 370px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    justify-content: space-between;
+    align-items: center;
 
-// face type
+    h2 {
+        font-size: 30px;
+        color: #123456; /* Adjust color as needed */
+        margin-bottom: 10px;
+    }
+    .card-content h3 {
+        font-size: 16px;
+        color: #000;
+        font-weight: bold;
+        margin: 15px 0 5px;
+    }
+    .card-content h3 span {
+        font-weight: normal;
+        font-size: 14px;
+        color: #555;
+    }
+    .card-content p {
+        font-size: 14px;
+        color: #777;
+    }
+    .page-indicator {
+        background: rgba(0, 0, 0, 0.1);
+        color: #fff;
+        font-size: 12px;
+    }
+    .dot.active {
+        background-color: #144d37; /* Adjust active dot color */
+    }
+    .pagination-dots {
+        display: flex;
+        justify-content: center;
+    }
+}
+.dot.active {
+    background-color: #123456; /* Adjust active dot color */
+}
+
+// section2-face type
 .face_title h3 {
     font-size: 25px;
     color: $primary-80;
     height: 58px;
 }
-
 .type_img p {
     font-size: 13px;
     margin-left: 10px;
 }
 
-// title : shop
-
+// section3-category
 .category_card {
     .category_img img {
         width: 100%;
@@ -87,6 +135,12 @@
     .category_info p {
         font-size: 12px;
     }
+    .category_img {
+        position: relative;
+        width: 100%;
+        height: 200px;
+        border-radius: 15px;
+    }
 }
 
 // gift card
@@ -97,12 +151,13 @@
         height: 58px;
     }
 
-    .gift_card .holiday_video {
+    .holiday_video {
         width: 100%;
         height: auto;
         background-size: cover;
         border-radius: 15px;
         transition: opacity 0.3s ease;
+        margin-top: 10px;
     }
     .gift_text p {
         font-size: 13px;
@@ -112,44 +167,25 @@
 // service
 
 .service h3 {
-    margin-top: 250px;
-    margin-bottom: 5px;
     font-size: 25px;
     color: $primary-80;
     // width: 200px;
     height: 58px;
-    padding: 20px;
-}
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    max-width: 370px;
-    margin: 0 auto;
-    margin-top: 20px;
 }
 
-.best_card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 .card {
     width: calc(50% - 10px); /* 50% width minus half the gap to center the cards */
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px; /* Adjust as needed for rounded corners */
-}
-
-.card p {
-    margin-top: 10px;
-    font-size: 14px;
-    text-align: center;
+    background-color: #144d37;
+    border-radius: 20px;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    img {
+        width: 100%;
+        border-radius: 10px; /* Adjust as needed for rounded corners */
+    }
 }
 
 // tablet

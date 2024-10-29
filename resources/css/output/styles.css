@@ -296,9 +296,10 @@ legend {
 .swiper .swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 161px;
+  border-radius: 15px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .swiper .swiper-slide a {
   display: block;
@@ -610,36 +611,13 @@ legend {
   left: 0;
 }
 
-.video_container {
-  width: 370px;
-}
-
-.video_container source {
-  width: 100%;
-}
-
-.bestseller-section {
-  max-width: 370px;
-  margin: 0 auto;
-  font-family: Arial, sans-serif;
-  justify-content: space-between;
-  align-items: center;
-}
-
-h2 {
-  font-size: 18px;
-  color: #123456; /* Adjust color as needed */
-  margin-bottom: 10px;
+.video {
+  width: 390px;
+  max-width: 100%;
+  height: auto; /* Maintains aspect ratio */
 }
 
 .best_card {
-  background-color: #f9f9f9;
-  border-radius: 20px;
-  padding: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.card {
   background-color: #f9f9f9;
   border-radius: 20px;
   padding: 20px;
@@ -651,44 +629,18 @@ h2 {
   width: 100%;
   text-align: center;
 }
-
 .image-container img {
   width: 100%;
   border-radius: 15px;
 }
-
-.page-indicator {
+.image-container .page-indicator {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: rgba(0, 0, 0, 0.1);
-  color: #fff;
-  font-size: 12px;
   padding: 2px 8px;
   border-radius: 12px;
 }
-
-.card-content h3 {
-  font-size: 16px;
-  color: #000;
-  font-weight: bold;
-  margin: 15px 0 5px;
-}
-
-.card-content h3 span {
-  font-weight: normal;
-  font-size: 14px;
-  color: #555;
-}
-
-.card-content p {
-  font-size: 14px;
-  color: #777;
-}
-
-.pagination-dots {
-  display: flex;
-  justify-content: center;
+.image-container .pagination-dots {
   margin-top: 15px;
 }
 
@@ -699,10 +651,6 @@ h2 {
   border-radius: 50%;
   margin: 0 4px;
   cursor: pointer;
-}
-
-.dot.active {
-  background-color: #123456; /* Adjust active dot color */
 }
 
 .face_type h3 {
@@ -721,13 +669,6 @@ h2 {
   width: 370px;
   border-radius: 15px;
   background-color: 0;
-}
-
-.category_img {
-  position: relative;
-  width: 100%;
-  height: 200px;
-  border-radius: 15px;
 }
 
 .category_img img {
@@ -754,15 +695,6 @@ h2 {
   margin: 4px 0 0;
 }
 
-.gift_title h3 {
-  margin-top: 30px;
-  margin-bottom: 5px;
-  font-size: 25px;
-  color: #0e2b5e;
-  height: 58px;
-  padding: 20px;
-}
-
 .gift_card {
   width: 370px;
   height: 370px;
@@ -771,15 +703,36 @@ h2 {
   align-items: left;
   margin: 10px;
 }
-
-.gift_text p {
+.gift_card .gift_title h3 {
+  margin-top: 30px;
+  margin-bottom: 5px;
+  padding: 20px;
+}
+.gift_card .gift_text p {
   padding: 10px;
 }
 
-.holiday_video {
-  width: 100%;
-  border-radius: 15px;
+.service h3 {
+  margin-top: 250px;
+  margin-bottom: 5px;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 370px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.card-container .card {
+  padding: 20px;
+}
+.card-container .card p {
   margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
 }
 
 .sec-g {
@@ -865,6 +818,50 @@ h2 {
   display: none;
 }
 
+.bestseller-section {
+  max-width: 370px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+.bestseller-section h2 {
+  font-size: 30px;
+  color: #123456; /* Adjust color as needed */
+  margin-bottom: 10px;
+}
+.bestseller-section .card-content h3 {
+  font-size: 16px;
+  color: #000;
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+.bestseller-section .card-content h3 span {
+  font-weight: normal;
+  font-size: 14px;
+  color: #555;
+}
+.bestseller-section .card-content p {
+  font-size: 14px;
+  color: #777;
+}
+.bestseller-section .page-indicator {
+  background: rgba(0, 0, 0, 0.1);
+  color: #fff;
+  font-size: 12px;
+}
+.bestseller-section .dot.active {
+  background-color: #144d37; /* Adjust active dot color */
+}
+.bestseller-section .pagination-dots {
+  display: flex;
+  justify-content: center;
+}
+
+.dot.active {
+  background-color: #123456; /* Adjust active dot color */
+}
+
 .face_title h3 {
   font-size: 25px;
   color: #0e2b5e;
@@ -897,45 +894,34 @@ h2 {
 .category_card .category_info p {
   font-size: 12px;
 }
+.category_card .category_img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 15px;
+}
 
 .gift_card .gift_title h3 {
   font-size: 25px;
   color: #0e2b5e;
   height: 58px;
 }
-.gift_card .gift_card .holiday_video {
+.gift_card .holiday_video {
   width: 100%;
   height: auto;
   background-size: cover;
   border-radius: 15px;
   transition: opacity 0.3s ease;
+  margin-top: 10px;
 }
 .gift_card .gift_text p {
   font-size: 13px;
 }
 
 .service h3 {
-  margin-top: 250px;
-  margin-bottom: 5px;
   font-size: 25px;
   color: #0e2b5e;
   height: 58px;
-  padding: 20px;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  max-width: 370px;
-  margin: 0 auto;
-  margin-top: 20px;
-}
-
-.best_card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .card {
@@ -943,17 +929,14 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #144d37;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-
 .card img {
   width: 100%;
   border-radius: 10px; /* Adjust as needed for rounded corners */
-}
-
-.card p {
-  margin-top: 10px;
-  font-size: 14px;
-  text-align: center;
 }
 
 @media screen and (min-width: 600px) {

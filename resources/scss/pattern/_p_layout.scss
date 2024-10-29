@@ -271,86 +271,39 @@
     }
 }
 
+// section
 // video
-
-.video_container {
-    width: 370px;
-}
-.video_container source {
-    width: 100%;
-}
-// best
-.bestseller-section {
-    // display: flex;
-    max-width: 370px;
-    margin: 0 auto;
-    font-family: Arial, sans-serif;
-    justify-content: space-between;
-    align-items: center;
+.video {
+    width: 390px;
+    max-width: 100%;
+    height: auto; /* Maintains aspect ratio */
 }
 
-h2 {
-    font-size: 18px;
-    color: #123456; /* Adjust color as needed */
-    margin-bottom: 10px;
-}
+// section1-best sellers
 .best_card {
     background-color: #f9f9f9;
     border-radius: 20px;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-.card {
-    background-color: #f9f9f9;
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 .image-container {
     position: relative;
     width: 100%;
     text-align: center;
-}
-
-.image-container img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-.page-indicator {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.1);
-    color: #fff;
-    font-size: 12px;
-    padding: 2px 8px;
-    border-radius: 12px;
-}
-
-.card-content h3 {
-    font-size: 16px;
-    color: #000;
-    font-weight: bold;
-    margin: 15px 0 5px;
-}
-
-.card-content h3 span {
-    font-weight: normal;
-    font-size: 14px;
-    color: #555;
-}
-
-.card-content p {
-    font-size: 14px;
-    color: #777;
-}
-
-.pagination-dots {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
+    img {
+        width: 100%;
+        border-radius: 15px;
+    }
+    .page-indicator {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: 2px 8px;
+        border-radius: 12px;
+    }
+    .pagination-dots {
+        margin-top: 15px;
+    }
 }
 
 .dot {
@@ -361,37 +314,24 @@ h2 {
     margin: 0 4px;
     cursor: pointer;
 }
-
-.dot.active {
-    background-color: #123456; /* Adjust active dot color */
-}
-
-// face type
+// section2-face type
 .face_type h3 {
     margin-top: 30px;
     margin-bottom: 5px;
     padding: 20px;
 }
-
 .type_img img {
     width: 100%;
     border-radius: 15px;
     padding: 10px;
 }
 
-// category
+// section3-category
 .category_card {
     width: 370px;
     border-radius: 15px;
     background-color: red($color: #000000);
 }
-.category_img {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    border-radius: 15px;
-}
-
 .category_img img {
     margin: 10px;
     // width: 370px;
@@ -410,26 +350,14 @@ h2 {
     left: 16px; /* 왼쪽에서 16px 떨어뜨리기 */
     transform: translateY(-50%); /* 수직 가운데 정렬 */
 }
-
 .category_info h3 {
     margin: 0;
 }
-
 .category_info p {
     margin: 4px 0 0;
 }
 
-// gift card
-.gift_title h3 {
-    margin-top: 30px;
-    margin-bottom: 5px;
-    font-size: 25px;
-    color: $primary-80;
-    // width: 200px;
-    height: 58px;
-    padding: 20px;
-}
-
+// section3-giftcard
 .gift_card {
     width: 370px;
     height: 370px;
@@ -437,17 +365,40 @@ h2 {
     flex-direction: column;
     align-items: left;
     margin: 10px;
-}
-.gift_text p {
-    padding: 10px;
-}
-.holiday_video {
-    width: 100%;
-    border-radius: 15px;
-    margin-top: 10px;
+    .gift_title h3 {
+        margin-top: 30px;
+        margin-bottom: 5px;
+        // width: 200px;
+        padding: 20px;
+    }
+    .gift_text p {
+        padding: 10px;
+    }
 }
 
-// service
+// section5-service
+.service h3 {
+    margin-top: 250px;
+    margin-bottom: 5px;
+    padding: 20px;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 370px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    .card {
+        padding: 20px;
+    }
+    .card p {
+        margin-top: 10px;
+        font-size: 14px;
+        text-align: center;
+    }
+}
 
 // section layout
 .sec-g {
