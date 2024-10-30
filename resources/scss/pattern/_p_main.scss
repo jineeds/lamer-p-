@@ -58,6 +58,7 @@
 // section1-best sellers
 .sec-bestseller {
     .inner {
+        flex-wrap: wrap;
         display: flex;
     }
     .sec-g__tit {
@@ -312,6 +313,24 @@
     }
 }
 
+@media screen and (min-width: 600px) {
+    .sec-gift {
+        .sec-g__cont {
+            width: 100%;
+            height: 70vh;
+            background-size: cover;
+            border-radius: 15px;
+            transition: opacity 0.3s ease;
+        }
+    }
+    .sec-bestseller {
+        .inner {
+            flex-wrap: nowrap;
+            display: flex;
+        }
+    }
+}
+
 // desktop
 @media screen and (min-width: 1024px) {
     .slide-intro {
@@ -343,6 +362,60 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .sec-service {
+        .sec-g__cont {
+            display: flex;
+            flex-direction: row; /* 가로 방향으로 변경 */
+            flex-wrap: nowrap;
+        }
+        .inner {
+            display: flex;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .sec-gift {
+        .sec-g__cont {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            border-radius: 15px;
+            transition: opacity 0.3s ease;
+        }
+        .inner {
+            margin: 30px 0;
+            display: flex;
+            .sec-g__tit {
+                display: flex;
+                flex-wrap: wrap;
+                p {
+                    font-size: 17px;
+                    width: 500px;
+                }
+            }
+        }
+    }
+}
+
+// @media screen and (min-width: 1024px) {
+//     .sec-service {
+//         .sec-g__cont {
+//             display: flex;
+//             flex-direction: row; /* 가로 방향으로 변경 */
+//             flex-wrap: wrap; /* 줄 바꿈 허용 */
+//             gap: 20px; /* 카드 간격 (옵션) */
+//             justify-content: center; /* 가운데 정렬 (옵션) */
+//         }
+//         .inner {
+//             flex: 1 1 25%; /* 각 카드가 4개씩 가로로 배치 */
+//             max-width: 25%; /* 카드 너비를 25%로 고정 */
+//             box-sizing: border-box; /* 패딩 포함 너비 계산 */
+//         }
+//     }
+// }
 
 .slide-studio {
     overflow: visible;

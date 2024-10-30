@@ -28,10 +28,10 @@ var swiper = new Swiper('.slide-studio', {
     },
     loop: true, // 슬라이더가 무한 반복되도록 설정
     autoplay: {
-        delay: 1500, // 슬라이드 전환 간격(밀리초 단위, 3000ms = 3초)
+        delay: 2500, // 슬라이드 전환 간격(밀리초 단위, 3000ms = 3초)
         disableOnInteraction: false, // 사용자가 슬라이드를 클릭해도 자동 전환 유지
     },
-    speed: 1000, // 슬라이드가 넘어가는 속도 (1초)
+    speed: 2500, // 슬라이드가 넘어가는 속도 (1초)
 });
 
 var swiper = new Swiper('.slide-best', {
