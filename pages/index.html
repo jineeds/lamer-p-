@@ -1,334 +1,438 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>KRDS themplate</title>
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="페이지 제목" />
-        <meta property="og:description" content="페이지 설명" />
-        <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
-        <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:title" content="페이지 제목" />
-        <meta name="twitter:description" content="페이지 설명" />
-        <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
-        <meta name="twitter:domain" content="사이트 명" />
-        <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
-        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="../resources/css/pattern_css.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script defer src="../resources/js/include.js"></script>
-        <script defer src="../resources/js/ui-pattern.js"></script>
-        <script defer src="../resources/js/ui-swiper.js"></script>
-    </head>
-    <body>
-        <div id="skip-nav">
-            <a href="#gnb">메뉴 바로가기</a>
-            <a href="#container">본문 바로가기</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>KRDS themplate</title>
+    <meta
+      property="og:type"
+      content="website"
+    />
+    <meta
+      property="og:title"
+      content="페이지 제목"
+    />
+    <meta
+      property="og:description"
+      content="페이지 설명"
+    />
+    <meta
+      property="og:image"
+      content="http://www.mysite.com/article/article1_featured_image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta
+      name="twitter:card"
+      content="summary"
+    />
+    <meta
+      name="twitter:title"
+      content="페이지 제목"
+    />
+    <meta
+      name="twitter:description"
+      content="페이지 설명"
+    />
+    <meta
+      name="twitter:image"
+      content="http://www.mysite.com/article/article1.html"
+    />
+    <meta
+      name="twitter:domain"
+      content="사이트 명"
+    />
+    <link
+      rel="shortcut icon"
+      href="http://www.mysite.com/favicon.ico"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="../resources/css/pattern_css.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      defer
+      src="../resources/js/include.js"
+    ></script>
+    <script
+      defer
+      src="../resources/js/ui-pattern.js"
+    ></script>
+    <script
+      defer
+      src="../resources/js/ui-swiper.js"
+    ></script>
+  </head>
+  <body>
+    <div id="skip-nav">
+      <a href="#gnb">메뉴 바로가기</a>
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+      <header
+        id="header"
+        class=""
+      >
+        <div class="inner">
+          <h1 id="logo">
+            <a href="#">
+              <span>logo</span>
+            </a>
+          </h1>
+          <nav
+            id="gnb"
+            class="gnb"
+          >
+            <ul class="gnb__depth1">
+              <li>
+                <a href="#">
+                  <span>BEST SELLERS</span>
+                </a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu1-1</a></li>
+                  <li><a href="#">menu1-2</a></li>
+                  <li><a href="#">menu1-3</a></li>
+                  <li><a href="#">menu1-4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>PRODUCT</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu2-1</a></li>
+                  <li><a href="#">menu2-2</a></li>
+                  <li><a href="#">menu2-3</a></li>
+                  <li><a href="#">menu2-4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>BRAND STORY</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu3-1</a></li>
+                  <li><a href="#">menu3-2</a></li>
+                  <li><a href="#">menu3-3</a></li>
+                  <li><a href="#">menu3-4</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>MY PAGE</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu4-1</a></li>
+                  <li><a href="#">menu4-2</a></li>
+                  <li><a href="#">menu4-3</a></li>
+                  <li><a href="#">menu4-4</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <div class="util">
+            <!-- active 추가시 활성화 -->
+            <div class="lang">
+              <button class="lang__btn">kor</button>
+              <ul class="lang__lst">
+                <li>kor</li>
+                <li>eng</li>
+              </ul>
+            </div>
+            <button class="search">
+              <span class="blind">검색</span>
+            </button>
+            <button class="all-menu">
+              <span class="blind">전체메뉴</span>
+            </button>
+          </div>
         </div>
-        <div id="wrap">
-            <header id="header" class="">
-                <div class="inner">
-                    <h1 id="logo">
-                        <a href="#">
-                            <span>logo</span>
-                        </a>
-                    </h1>
-                    <nav id="gnb" class="gnb">
-                        <ul class="gnb__depth1">
-                            <li>
-                                <a href="#">
-                                    <span>BEST SELLERS</span>
-                                </a>
-                                <ul class="gnb__depth2">
-                                    <li><a href="#">menu1-1</a></li>
-                                    <li><a href="#">menu1-2</a></li>
-                                    <li><a href="#">menu1-3</a></li>
-                                    <li><a href="#">menu1-4</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span>PRODUCT</span></a>
-                                <ul class="gnb__depth2">
-                                    <li><a href="#">menu2-1</a></li>
-                                    <li><a href="#">menu2-2</a></li>
-                                    <li><a href="#">menu2-3</a></li>
-                                    <li><a href="#">menu2-4</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span>BRAND STORY</span></a>
-                                <ul class="gnb__depth2">
-                                    <li><a href="#">menu3-1</a></li>
-                                    <li><a href="#">menu3-2</a></li>
-                                    <li><a href="#">menu3-3</a></li>
-                                    <li><a href="#">menu3-4</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span>MY PAGE</span></a>
-                                <ul class="gnb__depth2">
-                                    <li><a href="#">menu4-1</a></li>
-                                    <li><a href="#">menu4-2</a></li>
-                                    <li><a href="#">menu4-3</a></li>
-                                    <li><a href="#">menu4-4</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="util">
-                        <!-- active 추가시 활성화 -->
-                        <div class="lang">
-                            <button class="lang__btn">kor</button>
-                            <ul class="lang__lst">
-                                <li>kor</li>
-                                <li>eng</li>
-                            </ul>
-                        </div>
-                        <button class="search">
-                            <span class="blind">검색</span>
-                        </button>
-                        <button class="all-menu">
-                            <span class="blind">전체메뉴</span>
-                        </button>
-                    </div>
-                </div>
-                <!-- active 추가시 활성화 -->
-                <nav id="nav-all" class="">
-                    <ul class="gnb__depth1">
-                        <li>
-                            <a href="#">
-                                <span>BEST & NEW</span>
-                            </a>
-                            <!-- <ul class="gnb__depth2">
+        <!-- active 추가시 활성화 -->
+        <nav
+          id="nav-all"
+          class=""
+        >
+          <ul class="gnb__depth1">
+            <li>
+              <a href="#">
+                <span>BEST & NEW</span>
+              </a>
+              <!-- <ul class="gnb__depth2">
                                 <li><a href="#">BEST PRODUCTS</a></li>
                                 <li><a href="#">NEW PRODUCT</a></li>
                             </ul>
                         </li> -->
-                        </li>
+            </li>
 
-                        <li>
-                            <a href="#"><span>PRODUCT</span></a>
-                            <!-- <ul class="gnb__depth2">
+            <li>
+              <a href="#"><span>PRODUCT</span></a>
+              <!-- <ul class="gnb__depth2">
                                 <li><a href="#">FACE</a></li>
                                 <li><a href="#">BODY</a></li>
                                 <li><a href="#">SKIN CARE</a></li>
                                 <li><a href="#">SPECIAL COLLECTION</a></li>
                             </ul> -->
-                        </li>
-                        <li>
-                            <a href="#"><span>BRAND STOTY</span></a>
-                            <!-- <ul class="gnb__depth2">
+            </li>
+            <li>
+              <a href="#"><span>BRAND STOTY</span></a>
+              <!-- <ul class="gnb__depth2">
                                 <li><a href="#">menu3-1</a></li>
                                 <li><a href="#">menu3-2</a></li>
                                 <li><a href="#">menu3-3</a></li>
                                 <li><a href="#">menu3-4</a></li>
                             </ul> -->
-                        </li>
-                        <li>
-                            <a href="#"><span>MY PAGE</span></a>
-                        </li>
-                    </ul>
+            </li>
+            <li>
+              <a href="#"><span>MY PAGE</span></a>
+            </li>
+          </ul>
 
-                    <button class="close">
-                        <span class="">전체메뉴 닫기</span>
-                    </button>
-                </nav>
-            </header>
-            <!-- main banner / slide -->
-            <div class="slide">
-                <!-- Slider main container -->
-                <div class="swiper slide-intro">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <picture>
-                                    <source srcset="../resources/images/pattern/common/main_desk1.png" media="(min-width: 1024px)" />
-                                    <source srcset="../resources/images/pattern/common/main_tablet1.jpg" media="(min-width: 600px)" />
-                                    <source srcset="../resources/images/pattern/common/main_mobile1.avif" />
-                                    <img src="../resources/images/pattern/common/main_mobile1.avif" alt="Flowers" />
-                                </picture>
-                                <div class="text-area">
-                                    <div class="inner">
-                                        <strong class="text-area__tit">SPECIAL <br />Genaissance de la Me</strong>
-                                        <p class="text-area__cont">제네상스 드 라메르</p>
-                                        <span class="text-area__goto text-area__goto--hidden">READ MORE</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <picture>
-                                    <source srcset="../resources/images/pattern/common/main_mobile5.jpg" media="(min-width: 1024px)" />
-                                    <source srcset="../resources/images/pattern/common/main_mobile5.jpgf" media="(min-width: 600px)" />
-                                    <source srcset="../resources/images/pattern/common/main_mobile5.jpg" />
-                                    <img src="../resources/images/pattern/common/main_mobile5.jpg" alt="Flowers" />
-                                </picture>
-                                <div class="text-area">
-                                    <div class="inner">
-                                        <strong class="text-area__tit">SPECIAL <br />Genaissance de la Me</strong>
-                                        <p class="text-area__cont">제네상스 드 라메르</p>
-                                        <span class="text-area__goto text-area__goto--hidden">READ MORE</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#">
-                                <picture>
-                                    <source srcset="../resources/images/pattern/common/lm_mian_sample2.avif" />
-                                    <source srcset="../resources/images/pattern/common/lm_mian_sample2.avif" />
-                                    <source srcset="../resources/images/pattern/common/lm_mian_sample2.avif" />
-                                    <img src="../resources/images/pattern/common/lm_mian_sample2.avif" alt="Flowers" />
-                                </picture>
-                                <div class="text-area">
-                                    <div class="inner">
-                                        <strong class="text-area__tit">SPECIAL <br />Genaissance de la Me</strong>
-                                        <p class="text-area__cont">제네상스 드 라메르</p>
-                                        <span class="text-area__goto text-area__goto--hidden">READ MORE</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+          <button class="close">
+            <span class="">전체메뉴 닫기</span>
+          </button>
+        </nav>
+      </header>
+      <!-- main banner / slide -->
+      <div class="slide">
+        <!-- Slider main container -->
+        <div class="swiper slide-intro">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <source
+                    srcset="../resources/images/pattern/common/main_desk1.png"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="../resources/images/pattern/common/main_tablet1.jpg"
+                    media="(min-width: 600px)"
+                  />
+                  <source srcset="../resources/images/pattern/common/main_mobile1.avif" />
+                  <img
+                    src="../resources/images/pattern/common/main_mobile1.avif"
+                    alt="Flowers"
+                  />
+                </picture>
+                <div class="text-area">
+                  <div class="inner">
+                    <strong class="text-area__tit">SPECIAL <br />Genaissance de la Me</strong>
+                    <p class="text-area__cont">제네상스 드 라메르</p>
+                    <span class="text-area__goto text-area__goto--hidden">READ MORE</span>
+                  </div>
                 </div>
+              </a>
             </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <source
+                    srcset="../resources/images/pattern/common/main_mobile5.jpg"
+                    media="(min-width: 1024px)"
+                  />
+                  <source
+                    srcset="../resources/images/pattern/common/main_mobile5.jpgf"
+                    media="(min-width: 600px)"
+                  />
+                  <source srcset="../resources/images/pattern/common/main_mobile5.jpg" />
+                  <img
+                    src="../resources/images/pattern/common/main_mobile5.jpg"
+                    alt="Flowers"
+                  />
+                </picture>
+                <div class="text-area">
+                  <div class="inner">
+                    <strong class="text-area__tit">SPECIAL <br />Genaissance de la Me</strong>
+                    <p class="text-area__cont">제네상스 드 라메르</p>
+                    <span class="text-area__goto text-area__goto--hidden">READ MORE</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <picture>
+                  <source srcset="../resources/images/pattern/common/lm_mian_sample2.avif" />
+                  <source srcset="../resources/images/pattern/common/lm_mian_sample2.avif" />
+                  <source srcset="../resources/images/pattern/common/lm_mian_sample2.avif" />
+                  <img
+                    src="../resources/images/pattern/common/lm_mian_sample2.avif"
+                    alt="Flowers"
+                  />
+                </picture>
+                <div class="text-area">
+                  <div class="inner">
+                    <strong class="text-area__tit">SPECIAL <br />Genaissance de la Me</strong>
+                    <p class="text-area__cont">제네상스 드 라메르</p>
+                    <span class="text-area__goto text-area__goto--hidden">READ MORE</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-            <main id="container">
-                <section class="sec-g sec-video">
-                    <h2 class="seg-g__tit">Uncover Your Glow.<br />당신의 빛을 밝혀보세요.</h2>
-                    <div class="seg-g__cont">
-                        <video id="video-pc" autoplay="" loop="" muted="" playsinline="" controls="" style="width: 100%">
-                            <source src="https://www.cremedelamer.com/media/export/cms/2022LaMer/Global%20CMS/Rich%20Tentpole/Slices/Landing%20Page/Desktop/LM_2024_FY25_CremeNight_Tentpole_LP_Desktop_Slice_01.mp4" type="video/mp4" />
-                        </video>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <main id="container">
+        <section class="sec-g sec-video">
+          <h2 class="seg-g__tit">Uncover Your Glow.<br />당신의 빛을 밝혀보세요.</h2>
+          <div class="seg-g__cont">
+            <video
+              id="video-pc"
+              autoplay=""
+              loop=""
+              muted=""
+              playsinline=""
+              controls=""
+              style="width: 100%"
+            >
+              <source
+                src="https://www.cremedelamer.com/media/export/cms/2022LaMer/Global%20CMS/Rich%20Tentpole/Slices/Landing%20Page/Desktop/LM_2024_FY25_CremeNight_Tentpole_LP_Desktop_Slice_01.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+        </section>
+        <!-- sec1 bestsellers-->
+        <!-- slide 형태-->
+        <section class="sec-g sec-bestseller">
+          <div class="inner">
+            <h3 class="sec-g__tit">BEST SELLERS</h3>
+            <div class="sec-g__cont">
+              <div class="swiper slide-best">
+                <!-- js 이름 동일하게 slide-best  -->
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="../resources/images/pattern/common/best img.avif"
+                      alt="Creme de la Mer"
+                    />
+                    <div class="text-ara">
+                      <strong class="text_ara__tit"> CREME DE LA MER <span>| 크렘드 라 메르</span> </strong>
+                      <p class="text-ara__cont">리치한 질감과 촉촉한 마무리의 오리지널 럭셔리 크림</p>
                     </div>
-                </section>
-                <!-- sec1 bestsellers-->
-                <!-- slide 형태-->
-                <section class="sec-g sec-bestseller">
-                    <div class="inner">
-                        <h3 class="sec-g__tit">BEST SELLERS</h3>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../resources/images/pattern/common/best img.avif"
+                      alt="Creme de la Mer"
+                    />
+                    <div class="text-ara">
+                      <strong class="text_ara__tit"> CREME DE LA MER <span>| 크렘드 라 메르</span> </strong>
+                      <p class="text-ara__cont">리치한 질감과 촉촉한 마무리의 오리지널 럭셔리 크림</p>
                     </div>
-                    <!-- Swiper -->
-                    <div class="slide-best">
-                        <!-- js 이름 동일하게 slide-best  -->
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="sec-g__cont">
-                                    <img src="../resources/images/pattern/common/best img.avif" alt="Creme de la Mer" />
-                                </div>
-                                <div class="text-ara">
-                                    <strong class="text_ara__tit"> CREME DE LA MER <span>| 크렘드 라 메르</span> </strong>
-                                    <p class="text-ara__cont">리치한 질감과 촉촉한 마무리의 오리지널 럭셔리 크림</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="sec-g__cont">
-                                    <div class="inner">
-                                        <h3 class="sec-g__tit">BEST SELLERS</h3>
-                                        <img src="../resources/images/pattern/common/best img2.avif" alt="Creme de la Mer" />
-                                    </div>
-                                </div>
-                                <div class="text-ara">
-                                    <strong class="text_ara__tit"> CREME DE LA MER <span>| 크렘드 라 메르</span> </strong>
-                                    <p class="text-ara__cont">리치한 질감과 촉촉한 마무리의 오리지널 럭셔리 크림</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="sec-g__cont">
-                                    <div class="inner">
-                                        <h3 class="sec-g__tit">BEST SELLERS</h3>
-                                        <img src="../resources/images/pattern/common/best img3.avif" alt="Creme de la Mer" />
-                                    </div>
-                                </div>
-                                <div class="text-ara">
-                                    <strong class="text_ara__tit"> CREME DE LA MER <span>| 크렘드 라 메르</span> </strong>
-                                    <p class="text-ara__cont">리치한 질감과 촉촉한 마무리의 오리지널 럭셔리 크림</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="sec-g__cont">
-                                    <div class="inner">
-                                        <h3 class="sec-g__tit">BEST SELLERS</h3>
-                                        <img src="../resources/images/pattern/common/best img4.avif" alt="Creme de la Mer" />
-                                    </div>
-                                </div>
-                                <div class="text-ara">
-                                    <strong class="text_ara__tit"> CREME DE LA MER <span>| 크렘드 라 메르</span> </strong>
-                                    <p class="text-ara__cont">리치한 질감과 촉촉한 마무리의 오리지널 럭셔리 크림</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="pagination-dots">
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="../resources/images/pattern/common/best img.avif"
+                      alt="Creme de la Mer"
+                    />
+                    <div class="text-ara">
+                      <strong class="text_ara__tit"> CREME DE LA MER <span>| 크렘드 라 메르</span> </strong>
+                      <p class="text-ara__cont">리치한 질감과 촉촉한 마무리의 오리지널 럭셔리 크림</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="pagination-dots">
                         </div> -->
-                    </div>
-                </section>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="sec-g__more"
+              >더보기</a
+            >
+          </div>
+        </section>
 
-                <!-- sec2 face type -->
-                <section class="sec-g sec-type">
-                    <div class="inner">
-                        <h3 class="sec-g__tit">피부 타입별 모이스춰라이저</h3>
-                    </div>
-                    <div class="sec-g__cont">
-                        <img src="../resources/images/pattern/common/lamer_model.avif" alt="라메르코리아 대표모델" />
-                        <p>깊은 보슴감과 극강의 안티에이징을 선사하는 피부의 기적</p>
-                        <button>+</button>
-                    </div>
-                </section>
+        <!-- sec2 face type -->
+        <section class="sec-g sec-type">
+          <div class="inner">
+            <h3 class="sec-g__tit">피부 타입별 모이스춰라이저</h3>
+            <div class="sec-g__cont">
+              <img
+                src="../resources/images/pattern/common/lamer_model.avif"
+                alt="라메르코리아 대표모델"
+              />
+              <p>깊은 보슴감과 극강의 안티에이징을 선사하는 피부의 기적</p>
+              <button>+</button>
+            </div>
+          </div>
+        </section>
 
-                <!-- sec3 shop category -->
-                <!-- slide 형태-->
-                <section class="sec-g sec-studio">
-                    <div class="inner">
-                        <h3 class="sec-g__tit">
-                            SHOP BY<br />
-                            CATEGORY
-                        </h3>
-                        <div class="sec-g__cont">
-                            <div class="swiper slide-studio">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../resources/images/pattern/common/main_mobile3.jpg" alt="샘플1" />
-                                            <strong>아이트리트먼트</strong>
-                                            <p>EYE TREATMENTS</p>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../resources/images/pattern/common/main1.avif" alt="" />
-                                            <strong>아이트리트먼트</strong>
-                                            <p>EYE TREATMENTS</p>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../resources/images/pattern/common/main2.avif" alt="" />
-                                            <strong>아이트리트먼트</strong>
-                                            <p>EYE TREATMENTS</p>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="#">
-                                            <img src="../resources/images/pattern/common/lm_mian_sample2.avif" alt="" />
-                                            <strong>아이트리트먼트</strong>
-                                            <p>EYE TREATMENTS</p>
-                                        </a>
-                                    </div>
-                                    <!-- <div class="swiper-slide">
+        <!-- sec3 shop category -->
+        <!-- slide 형태-->
+        <section class="sec-g sec-studio">
+          <div class="inner">
+            <h3 class="sec-g__tit">
+              SHOP BY<br />
+              CATEGORY
+            </h3>
+            <div class="sec-g__cont">
+              <div class="swiper slide-studio">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="../resources/images/pattern/common/main_mobile3.jpg"
+                        alt="샘플1"
+                      />
+                      <strong>아이트리트먼트</strong>
+                      <p>EYE TREATMENTS</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="../resources/images/pattern/common/main1.avif"
+                        alt=""
+                      />
+                      <strong>아이트리트먼트</strong>
+                      <p>EYE TREATMENTS</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="../resources/images/pattern/common/main2.avif"
+                        alt=""
+                      />
+                      <strong>아이트리트먼트</strong>
+                      <p>EYE TREATMENTS</p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#">
+                      <img
+                        src="../resources/images/pattern/common/lm_mian_sample2.avif"
+                        alt=""
+                      />
+                      <strong>아이트리트먼트</strong>
+                      <p>EYE TREATMENTS</p>
+                    </a>
+                  </div>
+                  <!-- <div class="swiper-slide">
                                         <a href="#">
                                             <img src="https://www.wooriam.kr/upload/public/board/LnMCTNmG6JaCGQHJ/tb5eAihFnIe9tAmJ.jpg" alt="" />
                                             <strong>미국 공모주 정말 쉽게 받는 방법</strong>
@@ -349,50 +453,77 @@
                                             <em>2024.10.16</em>
                                         </a>
                                     </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#" class="sec-g__more">더보기</a>
-                    </div>
-                </section>
-                <!-- sec4 gift card -->
-                <section class="sec-g sec-gift">
-                    <div class="inner">
-                        <h3 class="sec-g__tit">GIFT SET</h3>
-                    </div>
-                    <video class="sec-g__cont" autoplay muted loop>
-                        <source src="../resources/images/pattern/common/holiday_video.mp4" type="video/mp4" />
-                        <p>모바일에서만 단독으로 판매하는 세트 상품을 만나보세요.</p>
-                        <button>+</button>
-                    </video>
-                </section>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="sec-g__more"
+              >더보기</a
+            >
+          </div>
+        </section>
+        <!-- sec4 gift card -->
+        <section class="sec-g sec-gift">
+          <div class="inner">
+            <h3 class="sec-g__tit">GIFT SET</h3>
+          </div>
+          <video
+            class="sec-g__cont"
+            autoplay
+            muted
+            loop
+          >
+            <source
+              src="../resources/images/pattern/common/holiday_video.mp4"
+              type="video/mp4"
+            />
+            <p>모바일에서만 단독으로 판매하는 세트 상품을 만나보세요.</p>
+            <button>+</button>
+          </video>
+        </section>
 
-                <!-- sec5 online service -->
-                <section class="sec-g sec-service">
-                    <div class="inner">
-                        <h3 class="sec-g__tit">SPECIAL SERVICE</h3>
-                    </div>
-                    <div class="sec-g__cont">
-                        <div class="sec-g__card">
-                            <img src="../resources/images/pattern/common/ser_1.avif" alt="Sample with Love" />
-                            <p>SAMPLES WITH LOVE</p>
-                        </div>
-                        <div class="sec-g__card">
-                            <img src="../resources/images/pattern/common/ser_1.avif" alt="Welcome Gift" />
-                            <p>WELCOME GIFT</p>
-                        </div>
-                        <div class="sec-g__card">
-                            <img src="../resources/images/pattern/common/ser_1.avif" alt="Skin Care" />
-                            <p>SKIN CARE</p>
-                        </div>
-                        <div class="sec-g__card">
-                            <img src="../resources/images/pattern/common/ser_1.avif" alt="Live Chat" />
-                            <p>LIVE CHAT</p>
-                        </div>
-                    </div>
-                </section>
-            </main>
-            <footer id="footer" include-html="./layout/footer.html"></footer>
-        </div>
-    </body>
+        <!-- sec5 online service -->
+        <section class="sec-g sec-service">
+          <div class="inner">
+            <h3 class="sec-g__tit">SPECIAL SERVICE</h3>
+          </div>
+          <div class="sec-g__cont">
+            <div class="sec-g__card">
+              <img
+                src="../resources/images/pattern/common/ser_1.avif"
+                alt="Sample with Love"
+              />
+              <p>SAMPLES WITH LOVE</p>
+            </div>
+            <div class="sec-g__card">
+              <img
+                src="../resources/images/pattern/common/ser_1.avif"
+                alt="Welcome Gift"
+              />
+              <p>WELCOME GIFT</p>
+            </div>
+            <div class="sec-g__card">
+              <img
+                src="../resources/images/pattern/common/ser_1.avif"
+                alt="Skin Care"
+              />
+              <p>SKIN CARE</p>
+            </div>
+            <div class="sec-g__card">
+              <img
+                src="../resources/images/pattern/common/ser_1.avif"
+                alt="Live Chat"
+              />
+              <p>LIVE CHAT</p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer
+        id="footer"
+        include-html="./layout/footer.html"
+      ></footer>
+    </div>
+  </body>
 </html>
