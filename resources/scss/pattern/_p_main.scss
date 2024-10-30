@@ -25,7 +25,7 @@
             &__tit {
                 font-size: 2.6rem;
                 color: $white;
-                font-family: 'GmarketSansMedium';
+                @include DMSerifDisplay;
                 font-weight: $font-medium;
             }
             &__cont {
@@ -122,11 +122,6 @@
 
 // section2-face type
 .sec-type {
-    .sec-g__tit {
-        font-size: 25px;
-        color: $primary-80;
-        height: 58px;
-    }
     .sec-g__cont p {
         font-size: 13px;
         margin-left: 10px;
@@ -188,12 +183,6 @@
 // service
 
 .sec-service {
-    .sec-g__tit {
-        font-size: 25px;
-        color: $primary-80;
-        // width: 200px;
-        height: 58px;
-    }
     .sec-g__card {
         width: calc(50% - 10px); /* 50% width minus half the gap to center the cards */
         display: flex;
@@ -210,6 +199,13 @@
     }
 }
 
+// 섹션 타이틀 문구 한번에 수정 가능
+.inner .sec-g__tit {
+    font-size: 1.6875rem;
+    margin-bottom: 5px;
+    // padding: px;
+    color: #0e2b5e;
+}
 // .card {
 //     width: calc(50% - 10px); /* 50% width minus half the gap to center the cards */
 //     display: flex;
