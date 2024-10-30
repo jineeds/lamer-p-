@@ -308,15 +308,8 @@ legend {
   display: block;
   width: 100%;
   height: 100%;
-  background-color: #144d37;
   border-radius: 10px;
   color: #fff;
-}
-.swiper .swiper-slide strong {
-  margin: 10px;
-}
-.swiper .swiper-slide p {
-  margin: 10px;
 }
 .swiper .swiper-button-next::after,
 .swiper .swiper-button-prev::after {
@@ -748,7 +741,6 @@ section3-giftcard .sec-gift .sec-g__cont p {
   margin: 0 auto;
 }
 .sec-service .sec-g__cont .sec-g__card p {
-  margin-top: 10px;
   font-size: 14px;
   text-align: center;
 }
@@ -873,6 +865,18 @@ section3-giftcard .sec-gift .sec-g__cont p {
   margin-left: 10px;
 }
 
+.slide-studio .swiper-slide a {
+  background-color: #144d37;
+}
+.slide-studio .swiper-slide a strong {
+  margin-left: 10px;
+  font-weight: 400;
+}
+.slide-studio .swiper-slide a p {
+  font-weight: 200;
+  margin: 2px 10px 10px 10px;
+}
+
 .category_card .category_img img {
   width: 100%;
   height: 200px;
@@ -918,7 +922,7 @@ section3-giftcard .sec-gift .sec-g__cont p {
 }
 
 .sec-service .sec-g__card {
-  width: calc(50% - 30px); /* 50% width minus half the gap to center the cards */
+  width: calc(50% - 10px); /* 50% width minus half the gap to center the cards */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -926,11 +930,13 @@ section3-giftcard .sec-gift .sec-g__cont p {
   border-radius: 20px;
   color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  margin: 10px;
 }
 .sec-service .sec-g__card img {
   width: 100%;
   border-radius: 10px; /* Adjust as needed for rounded corners */
+}
+.sec-service .sec-g__card p {
+  padding: 5px;
 }
 
 @media screen and (min-width: 600px) {
