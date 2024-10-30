@@ -297,8 +297,9 @@ legend {
 .swiper .swiper-slide img {
   display: block;
   width: 100%;
-  height: 160px;
-  border-radius: 15px;
+  height: 300px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   -o-object-fit: cover;
   object-fit: cover;
   margin-bottom: 10px;
@@ -307,6 +308,15 @@ legend {
   display: block;
   width: 100%;
   height: 100%;
+  background-color: #144d37;
+  border-radius: 10px;
+  color: #fff;
+}
+.swiper .swiper-slide strong {
+  margin: 10px;
+}
+.swiper .swiper-slide p {
+  margin: 10px;
 }
 .swiper .swiper-button-next::after,
 .swiper .swiper-button-prev::after {
