@@ -4,12 +4,16 @@
 .inner {
     position: relative;
     width: 100%;
-    max-width: $grid;
+    // max-width: $grid;
     margin: 0 auto;
     padding: 0 $p-mobile;
     @include tablet {
         padding: 0 $p-tablet;
     }
+}
+
+.sec-g .inner {
+    margin: 30px 0;
 }
 
 #skip-nav {
@@ -271,13 +275,12 @@
     }
 }
 
-// section
-.sec-g {
+section .sec-g {
     overflow: hidden;
     padding: 10vw 0;
     &__tit {
-        font-size: 1.6875rem;
-        padding-bottom: 5px;
+        font-size: 30px;
+        padding-bottom: 10px;
         // padding: px;
         color: #0e2b5e;
     }
@@ -336,7 +339,6 @@
     .sec-g__cont img {
         width: 100%;
         border-radius: 15px;
-        padding: 10px;
     }
 }
 // .sec-type @include tablet {
@@ -373,8 +375,7 @@
     margin: 4px 0 0;
 }
 
-// section3-giftcard
-.sec-gift {
+section3-giftcard .sec-gift {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -400,11 +401,7 @@
         flex-wrap: wrap;
         gap: 20px;
         margin: 0 auto;
-        margin-top: 20px;
 
-        .sec-g__card {
-            padding: 20px;
-        }
         .sec-g__card p {
             margin-top: 10px;
             font-size: 14px;
@@ -412,38 +409,3 @@
         }
     }
 }
-
-// // section layout
-// .sec-g {
-//     overflow: hidden;
-//     padding: 10vw 0;
-//     margin: 20px;
-//     &__tit {
-//         padding-bottom: 2.34375vw;
-//         font-size: 25px;
-//         color: $primary-80;
-//     }
-//     &__more {
-//         display: flex;
-//         align-items: center;
-//         gap: 10px;
-//         position: absolute;
-//         top: 17px;
-//         right: $p-mobile;
-//         font-size: 2rem;
-//         @include mobileMore {
-//             right: $p-tablet;
-//         }
-//         &::after {
-//             content: '\f061';
-//             @include lineAwesome;
-//             display: flex;
-//             justify-content: center;
-//             align-items: center;
-//             width: 40px;
-//             height: 40px;
-//             background: $gray-20;
-//             border-radius: 50%;
-//         }
-//     }
-// }
