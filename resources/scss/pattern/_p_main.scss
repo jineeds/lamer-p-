@@ -50,12 +50,7 @@
         display: none;
     }
 }
-// .best_card {
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-// }
-// section1-best sellers
+
 .sec-bestseller {
     .inner {
         flex-wrap: wrap;
@@ -65,15 +60,6 @@
         position: relative;
         z-index: 10;
         background: $white;
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -30px;
-            width: 30px;
-            height: 100%;
-            background: $white;
-        }
     }
 }
 .slide-best {
@@ -113,21 +99,7 @@
             color: #777;
         }
     }
-    // .text_ara__tit strong {
-    //     font-size: 16px;
-    //     color: #000;
-    //     font-weight: bold;
-    //     margin: 15px 0 5px;
-    // }
-    // .text_ara__tit span {
-    //     font-weight: normal;
-    //     font-size: 14px;
-    //     color: #555;
-    // }
-    // .text-ara p {
-    //     font-size: 14px;
-    //     color: #777;
-    // }
+
     .page-indicator {
         background: rgba(0, 0, 0, 0.1);
         color: #fff;
@@ -291,8 +263,7 @@
         .sec-g__tit {
             font-size: 30px;
             color: #123456;
-            padding: 0 50px;
-            margin-bottom: 90px;
+            padding: 0px 75px;
         }
     }
 }
@@ -309,12 +280,6 @@
                 border-radius: 15px;
                 transition: opacity 0.3s ease;
             }
-        }
-    }
-    .sec-bestseller {
-        .inner {
-            flex-wrap: nowrap;
-            display: flex;
         }
     }
 }
@@ -389,23 +354,34 @@
         }
     }
 }
-
-// @media screen and (min-width: 1024px) {
-//     .sec-service {
-//         .sec-g__cont {
-//             display: flex;
-//             flex-direction: row; /* 가로 방향으로 변경 */
-//             flex-wrap: wrap; /* 줄 바꿈 허용 */
-//             gap: 20px; /* 카드 간격 (옵션) */
-//             justify-content: center; /* 가운데 정렬 (옵션) */
-//         }
-//         .inner {
-//             flex: 1 1 25%; /* 각 카드가 4개씩 가로로 배치 */
-//             max-width: 25%; /* 카드 너비를 25%로 고정 */
-//             box-sizing: border-box; /* 패딩 포함 너비 계산 */
-//         }
-//     }
-// }
+@media screen and (min-width: 1024px) {
+    .sec-gift {
+        .inner {
+            display: flex;
+            flex-wrap: nowrap;
+            .sec-g__cont {
+                width: 100%;
+                // height: 70vh;
+                background-size: cover;
+                border-radius: 15px;
+                transition: opacity 0.3s ease;
+            }
+        }
+    }
+    .sec-bestseller {
+        .inner {
+            flex-wrap: nowrap;
+            display: flex;
+            justify-content: space-around;
+            .sec-g__tit {
+                position: relative;
+                z-index: 10;
+                background: #fff;
+                left: -120px;
+            }
+        }
+    }
+}
 
 .slide-studio {
     overflow: visible;

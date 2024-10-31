@@ -796,15 +796,6 @@ section .sec-g__more::after {
   z-index: 10;
   background: #fff;
 }
-.sec-bestseller .sec-g__tit::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -30px;
-  width: 30px;
-  height: 100%;
-  background: #fff;
-}
 
 .slide-best {
   width: 280px;
@@ -980,8 +971,7 @@ section .sec-g__more::after {
   .sec-bestseller .sec-g__tit {
     font-size: 30px;
     color: #123456;
-    padding: 0 50px;
-    margin-bottom: 90px;
+    padding: 0px 75px;
   }
 }
 @media screen and (min-width: 600px) {
@@ -995,10 +985,6 @@ section .sec-g__more::after {
     background-size: cover;
     border-radius: 15px;
     transition: opacity 0.3s ease;
-  }
-  .sec-bestseller .inner {
-    flex-wrap: nowrap;
-    display: flex;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -1057,6 +1043,29 @@ section .sec-g__more::after {
   }
   .sec-gift .inner .sec-g__cont source {
     border-radius: 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .sec-gift .inner {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .sec-gift .inner .sec-g__cont {
+    width: 100%;
+    background-size: cover;
+    border-radius: 15px;
+    transition: opacity 0.3s ease;
+  }
+  .sec-bestseller .inner {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: space-around;
+  }
+  .sec-bestseller .inner .sec-g__tit {
+    position: relative;
+    z-index: 10;
+    background: #fff;
+    left: -120px;
   }
 }
 .slide-studio {
