@@ -146,13 +146,17 @@
 }
 
 // section2-face type
-.sec-type {
-    .sec-g__cont p {
-        font-size: 13px;
-        margin-left: 10px;
+.sec-facetype {
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
     }
+    // .sec-g__video {
+    //     iframe {
+    //         width: 100%;
+    //     }
+    // }
 }
-
 // section3-category
 .slide-studio {
     .swiper-slide a {
@@ -194,26 +198,6 @@
         width: 100%;
         height: 200px;
         border-radius: 15px;
-    }
-}
-
-// gift card
-.sec-gift {
-    .seg-__tit {
-        font-size: 25px;
-        color: $primary-80;
-        height: 58px;
-    }
-
-    .sec-g__cont {
-        width: 100%;
-        height: auto;
-        background-size: cover;
-        border-radius: 15px;
-        transition: opacity 0.3s ease;
-    }
-    .sec-g__cont p {
-        font-size: 13px;
     }
 }
 
@@ -268,8 +252,8 @@
     }
     .sec-gift {
         width: 100%;
-        height: 100vh;
-        padding: 0px 20px;
+        // height: 100vh;
+        // padding: 0px 20px;
         display: flex;
         flex-direction: column;
         align-items: left;
@@ -315,12 +299,16 @@
 
 @media screen and (min-width: 600px) {
     .sec-gift {
-        .sec-g__cont {
-            width: 100%;
-            height: 70vh;
-            background-size: cover;
-            border-radius: 15px;
-            transition: opacity 0.3s ease;
+        .inner {
+            display: flex;
+            flex-wrap: nowrap;
+            .sec-g__cont {
+                width: 100%;
+                height: 70vh;
+                background-size: cover;
+                border-radius: 15px;
+                transition: opacity 0.3s ease;
+            }
         }
     }
     .sec-bestseller {
@@ -378,22 +366,24 @@
 
 @media screen and (min-width: 1024px) {
     .sec-gift {
-        .sec-g__cont {
-            width: 100%;
-            height: 100vh;
-            background-size: cover;
-            border-radius: 15px;
-            transition: opacity 0.3s ease;
-        }
         .inner {
-            margin: 30px 0;
             display: flex;
-            .sec-g__tit {
-                display: flex;
-                flex-wrap: wrap;
-                p {
-                    font-size: 17px;
-                    width: 500px;
+            flex-wrap: nowrap;
+            .sec-g__cont {
+                width: 100%;
+                height: 70vh;
+                background-size: cover;
+                border-radius: 15px;
+                transition: opacity 0.3s ease;
+            }
+            .sec-g__cont {
+                width: 100%;
+                height: 100vh;
+                background-size: cover;
+                transition: opacity 0.3s ease;
+
+                source {
+                    border-radius: 15px;
                 }
             }
         }
@@ -437,9 +427,17 @@
 }
 .sec-video {
     .sec-g__tit {
-        font-size: 30px;
         text-align: center;
-        font-family: 'DM Serif Display', serif;
         margin: 20px;
+        strong {
+            font-family: 'DM Serif Display', serif;
+            font-size: 30px;
+            color: $primary-80;
+        }
+        i {
+            font-family: 'Pretendard', sans-serif;
+            font-size: 18px;
+            color: $gray-60;
+        }
     }
 }

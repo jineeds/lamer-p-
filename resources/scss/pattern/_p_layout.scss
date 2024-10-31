@@ -335,15 +335,6 @@ section .sec-g {
     margin: 0 4px;
     cursor: pointer;
 }
-// section2-face type
-.sec-type {
-    .sec-g__cont img {
-        width: 100%;
-        border-radius: 15px;
-    }
-}
-// .sec-type @include tablet {
-//     padding: 0 $p-tablet;
 
 // section3-category
 .category_card {
@@ -376,27 +367,36 @@ section .sec-g {
     margin: 4px 0 0;
 }
 
-section3-giftcard .sec-gift {
+// section3-giftcard
+.sec-gift {
     width: 100%;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: left;
-    padding: 0 10px;
+    .sec-g__cont {
+        border-radius: 15px;
+        width: 100%;
+    }
+    // padding: 0 10px;
     // margin: 10px;
-    .seg-__tit {
-        margin-top: 30px;
-        margin-bottom: 5px;
-        // width: 200px;
-        padding: 20px;
-    }
-    .sec-g__cont p {
-        padding: 10px;
-    }
+    // .sec-g__tit {
+    //     margin-top: 30px;
+    // //     margin-bottom: 5px;
+    // //     // width: 200px;
+    // //     padding: 20px;
+    // // }
+    // .sec-g__copy {
+    //     padding: 10px;
+    // }
 }
 
 // section5-service
 .sec-service {
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
     .sec-g__cont {
         display: flex;
         flex-wrap: wrap;

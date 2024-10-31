@@ -37,7 +37,25 @@ var swiper = new Swiper('.slide-studio', {
 var swiper = new Swiper('.slide-best', {
     spaceBetween: 20,
     pagination: {
-        el: '.swiper-pagination',
+        el: '.slide-best .swiper-pagination',
         type: 'fraction',
     },
+
+    loop: true, // 슬라이더가 무한 반복되도록 설정
+    autoplay: {
+        delay: 2500, // 슬라이드 전환 간격(밀리초 단위, 3000ms = 3초)
+        disableOnInteraction: false, // 사용자가 슬라이드를 클릭해도 자동 전환 유지
+    },
+    speed: 2500, // 슬라이드가 넘어가는 속도 (1초)
+
+    // breakpoints: {
+    //     600: {
+    //         slidesPerView: 1,
+    //         spaceBetween: 20,
+    //     },
+    //     1024: {
+    //         slidesPerView: 2,
+    //         spaceBetween: 30,
+    //     },
+    // },
 });
