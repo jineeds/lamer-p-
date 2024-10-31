@@ -1102,6 +1102,34 @@ section .sec-g__more::after {
   color: #717171;
 }
 
+.sec-1-title p {
+  display: flex;
+  padding: 12px;
+  margin: 20px;
+  background: #144d37;
+  border-radius: 20px;
+  color: white;
+}
+
+.sec-option .s1_inner {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+.sec-option .s1_inner .sec-1-title {
+  display: flex;
+  justify-content: center;
+}
+.sec-option .s1_inner .button {
+  display: block;
+  font-size: 100%;
+  vertical-align: middle;
+  border: 0 none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .product-mainvisual .s1_inner {
   position: relative;
 }
