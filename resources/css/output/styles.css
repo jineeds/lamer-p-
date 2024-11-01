@@ -1104,10 +1104,11 @@ section .sec-g__more::after {
 
 .sec-1-title p {
   display: flex;
-  padding: 12px;
-  margin: 20px;
+  padding: 5px 25px;
+  margin: 20px 10px;
   background: #144d37;
   border-radius: 20px;
+  font-size: small;
   color: white;
 }
 
@@ -1174,12 +1175,10 @@ section .sec-g__more::after {
 }
 
 .item {
-  border: 1px solid #e0e0e0;
   border-radius: 10px;
   overflow: hidden;
   text-align: center;
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to bottom right, #fff, #d8d8d8);
 }
 
 .item a img {
@@ -1190,24 +1189,25 @@ section .sec-g__more::after {
 
 .text-ara {
   padding: 15px;
+  background-color: #144d37;
 }
 
 .text_ara__tit {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: #fff;
   display: block;
   margin-bottom: 8px;
 }
 
 .text_ara__tit span {
   font-size: 0.9rem;
-  color: #666;
+  color: #fff;
 }
 
 .text-ara__cont {
   font-size: 0.9rem;
-  color: #666;
+  color: #fff;
   line-height: 1.4;
 }
 

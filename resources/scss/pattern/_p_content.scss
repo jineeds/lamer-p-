@@ -2,10 +2,11 @@
 .sec-1-title {
     p {
         display: flex;
-        padding: 12px;
-        margin: 20px;
+        padding: 5px 25px;
+        margin: 20px 10px;
         background: #144d37;
         border-radius: 20px;
+        font-size: small;
         color: white;
     }
 }
@@ -89,13 +90,22 @@
 }
 
 .item {
-    border: 1px solid #e0e0e0;
     border-radius: 10px;
     overflow: hidden;
     text-align: center;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    // background-color: #fff;
+    background-image: linear-gradient(to bottom right, #fff, #d8d8d8);
+    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+// 카드 마우스 오버시 이미지 전환
+// .item {
+//     transition: opacity 0.3s ease; /* 부드러운 전환 효과 */
+// }
+// .item:hover {
+//     content: url('https://www.cremedelamer.com/media/export/cms/products/responsive/lm_prod_133035_4x5_1.png?width=900&height=1125');
+//     width: 100%;
+//     height: 100%;
+// }
 
 .item a img {
     width: 100%;
@@ -105,24 +115,25 @@
 
 .text-ara {
     padding: 15px;
+    background-color: #144d37;
 }
 
 .text_ara__tit {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #333;
+    color: $white;
     display: block;
     margin-bottom: 8px;
 }
 
 .text_ara__tit span {
     font-size: 0.9rem;
-    color: #666;
+    color: $white;
 }
 
 .text-ara__cont {
     font-size: 0.9rem;
-    color: #666;
+    color: $white;
     line-height: 1.4;
 }
 
