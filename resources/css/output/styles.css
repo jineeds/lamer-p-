@@ -1151,7 +1151,6 @@ section .sec-g__more::after {
   font-size: 14px; /* 부제목 글자 크기 */
 }
 
-/* 기본 스타일 설정 */
 .sec-1.sec-list {
   padding: 20px;
 }
@@ -1171,8 +1170,7 @@ section .sec-g__more::after {
 }
 
 .sec-1-cont .list li {
-  flex: 1 1 calc(25% - 20px); /* 카드 너비 4열 기준 */
-  max-width: 300px;
+  flex: 1 1 calc(50% - 20px); /* 2 columns */
 }
 
 .item {
@@ -1218,13 +1216,13 @@ section .sec-g__more::after {
 }
 
 /* 반응형 설정 */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 600px) and (max-width: 1023px) {
   .sec-1-cont .list li {
-    flex: 1 1 calc(50% - 20px); /* 2열 */
+    flex: 1 1 calc(50% - 20px); /* 2 columns */
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1024px) {
   .sec-1-cont .list li {
-    flex: 1 1 100%; /* 1열 */
+    flex: 1 1 calc(33.33% - 20px); /* 3 columns */
   }
 }/*# sourceMappingURL=styles.css.map */
