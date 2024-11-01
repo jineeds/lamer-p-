@@ -2,12 +2,13 @@
 .sec-1-title {
     p {
         display: flex;
-        padding: 5px 25px;
-        margin: 20px 10px;
+        padding: 0px 25px;
+        margin: 10px 10px;
         background: #144d37;
         border-radius: 20px;
         font-size: small;
         color: white;
+        text-align: center;
     }
 }
 .sec-option {
@@ -76,7 +77,7 @@
     margin: 0 auto;
 }
 
-.sec-1-cont .list {
+.list {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -85,82 +86,44 @@
     margin: 0;
 }
 
-.sec-1-cont .list li {
-    flex: 1 1 calc(50% - 20px); /* 2 columns */
+.list li {
+    flex: 1 0 calc(50% - 20px); /* 모바일 화면에서 2열 */
+    box-sizing: border-box;
 }
 
 .item {
     border-radius: 10px;
     overflow: hidden;
-    text-align: center;
-    // background-color: #fff;
+    text-align: left;
     background-image: linear-gradient(to bottom right, #fff, #d8d8d8);
-    // box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-// 카드 마우스 오버시 이미지 전환
-// .item {
-//     transition: opacity 0.3s ease; /* 부드러운 전환 효과 */
-// }
-// .item:hover {
-//     content: url('https://www.cremedelamer.com/media/export/cms/products/responsive/lm_prod_133035_4x5_1.png?width=900&height=1125');
-//     width: 100%;
-//     height: 100%;
-// }
+    display: flex;
+    flex-direction: column; /* 이미지와 텍스트가 세로로 정렬됨 */
+    height: 100%;
+    img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .text-ara {
+        padding: 15px;
+        background-color: #144d37;
+        color: white;
+    }
 
-.item a img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
+    .text_ara__tit {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
 
-.text-ara {
-    padding: 15px;
-    background-color: #144d37;
-}
-
-.text_ara__tit {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: $white;
-    display: block;
-    margin-bottom: 8px;
-}
-
-.text_ara__tit span {
-    font-size: 0.9rem;
-    color: $white;
-}
-
-.text-ara__cont {
-    font-size: 0.9rem;
-    color: $white;
-    line-height: 1.4;
-}
-
-.text-ara__cont strong {
-    color: #333;
+    .text_ara__cont {
+        font-size: 0.9rem;
+        line-height: 1.4;
+    }
 }
 
 /* 반응형 설정 */
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-    .sec-1-cont .list li {
-        flex: 1 1 calc(50% - 20px); /* 2 columns */
-    }
-}
-
 @media screen and (min-width: 1024px) {
-    .sec-1-cont .list li {
-        flex: 1 1 calc(33.33% - 20px); /* 3 columns */
+    .list li {
+        flex: 1 0 calc(25% - 20px); /* 큰 화면에서 4열 */
     }
 }
-// @media screen and (max-width: 1024px) {
-//     .sec-1-cont .list li {
-//         flex: 1 1 calc(50% - 20px); /* 2열 */
-//     }
-// }
-
-// @media screen and (max-width: 560px) {
-//     .sec-1-cont .list li {
-//         flex: 1 1 100%; /* 1열 */
-//     }
-// }

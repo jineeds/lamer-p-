@@ -790,6 +790,7 @@ section .sec-g__more::after {
 .sec-bestseller .inner {
   flex-wrap: wrap;
   display: flex;
+  justify-content: center;
 }
 .sec-bestseller .sec-g__tit {
   position: relative;
@@ -1104,12 +1105,13 @@ section .sec-g__more::after {
 
 .sec-1-title p {
   display: flex;
-  padding: 5px 25px;
-  margin: 20px 10px;
+  padding: 0px 25px;
+  margin: 10px 10px;
   background: #144d37;
   border-radius: 20px;
   font-size: small;
   color: white;
+  text-align: center;
 }
 
 .sec-option .s1_inner {
@@ -1161,7 +1163,7 @@ section .sec-g__more::after {
   margin: 0 auto;
 }
 
-.sec-1-cont .list {
+.list {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -1170,59 +1172,42 @@ section .sec-g__more::after {
   margin: 0;
 }
 
-.sec-1-cont .list li {
-  flex: 1 1 calc(50% - 20px); /* 2 columns */
+.list li {
+  flex: 1 0 calc(50% - 20px); /* 모바일 화면에서 2열 */
+  box-sizing: border-box;
 }
 
 .item {
   border-radius: 10px;
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   background-image: linear-gradient(to bottom right, #fff, #d8d8d8);
+  display: flex;
+  flex-direction: column; /* 이미지와 텍스트가 세로로 정렬됨 */
+  height: 100%;
 }
-
-.item a img {
+.item img {
   width: 100%;
   height: auto;
   display: block;
 }
-
-.text-ara {
+.item .text-ara {
   padding: 15px;
   background-color: #144d37;
+  color: white;
 }
-
-.text_ara__tit {
+.item .text_ara__tit {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #fff;
-  display: block;
-  margin-bottom: 8px;
 }
-
-.text_ara__tit span {
+.item .text_ara__cont {
   font-size: 0.9rem;
-  color: #fff;
-}
-
-.text-ara__cont {
-  font-size: 0.9rem;
-  color: #fff;
   line-height: 1.4;
 }
 
-.text-ara__cont strong {
-  color: #333;
-}
-
 /* 반응형 설정 */
-@media screen and (min-width: 600px) and (max-width: 1023px) {
-  .sec-1-cont .list li {
-    flex: 1 1 calc(50% - 20px); /* 2 columns */
-  }
-}
 @media screen and (min-width: 1024px) {
-  .sec-1-cont .list li {
-    flex: 1 1 calc(33.33% - 20px); /* 3 columns */
+  .list li {
+    flex: 1 0 calc(25% - 20px); /* 큰 화면에서 4열 */
   }
 }/*# sourceMappingURL=styles.css.map */
