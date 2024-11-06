@@ -47,17 +47,6 @@ var swiper = new Swiper('.slide-best', {
         disableOnInteraction: false, // 사용자가 슬라이드를 클릭해도 자동 전환 유지
     },
     speed: 2000, // 슬라이드가 넘어가는 속도 (1초)
-
-    // breakpoints: {
-    //     600: {
-    //         slidesPerView: 1,
-    //         spaceBetween: 20,
-    //     },
-    //     1024: {
-    //         slidesPerView: 2,
-    //         spaceBetween: 30,
-    //     },
-    // },
 });
 
 var swiper = new Swiper('.product-info', {
