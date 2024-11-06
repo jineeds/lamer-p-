@@ -64,9 +64,8 @@
     }
 }
 .slide-best {
-    // display: flex;
-    width: 280px;
-    // height: 280px;
+    width: 100%;
+    height: 450px;
     margin: 0 auto;
     font-family: Arial, sans-serif;
     justify-content: space-between;
@@ -260,6 +259,7 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        overflow: hidden;
 
         .sec-g__tit {
             font-size: 30px;
@@ -281,6 +281,11 @@
                 border-radius: 15px;
                 transition: opacity 0.3s ease;
             }
+        }
+    }
+    .slide-best {
+        .swiper-wrapper {
+            width: 50%;
         }
     }
 }
@@ -356,17 +361,9 @@
     }
 }
 @media screen and (min-width: 1024px) {
-    .sec-gift {
-        .inner {
-            display: flex;
-            flex-wrap: nowrap;
-            .sec-g__cont {
-                width: 100%;
-                // height: 70vh;
-                background-size: cover;
-                border-radius: 15px;
-                transition: opacity 0.3s ease;
-            }
+    .sec-studio {
+        .sec-g__cont {
+            overflow: hidden;
         }
     }
     .sec-bestseller {
@@ -378,7 +375,7 @@
                 position: relative;
                 z-index: 10;
                 background: #fff;
-                left: -120px;
+                left: -150px;
             }
         }
     }
