@@ -59,3 +59,9 @@ var swiper = new Swiper('.slide-best', {
     //     },
     // },
 });
+
+var swiper = new Swiper('.product-info', {
+    pagination: {
+        el: '.product-info .swiper-pagination',
+    },
+});
