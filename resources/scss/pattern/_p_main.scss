@@ -123,12 +123,12 @@
     .inner {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .sec-g__video {
+            width: 100%;
+        }
     }
-    // .sec-g__video {
-    //     iframe {
-    //         width: 100%;
-    //     }
-    // }
 }
 // section3-category
 .slide-studio {
@@ -418,3 +418,5 @@
         }
     }
 }
+
+// 테스트!!!

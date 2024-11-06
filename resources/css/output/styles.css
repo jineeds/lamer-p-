@@ -656,33 +656,6 @@ section .sec-g__more::after {
   border-radius: 50%;
 }
 
-.video {
-  width: 390px;
-  max-width: 100%;
-  height: auto; /* Maintains aspect ratio */
-}
-
-.page-indicator {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 2px 8px;
-  border-radius: 12px;
-}
-
-.pagination-dots {
-  margin-top: 15px;
-}
-
-.dot {
-  height: 6px;
-  width: 6px;
-  background-color: #ccc;
-  border-radius: 50%;
-  margin: 0 4px;
-  cursor: pointer;
-}
-
 .category_card {
   width: 370px;
   border-radius: 15px;
@@ -849,6 +822,11 @@ section .sec-g__more::after {
 .sec-facetype .inner {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.sec-facetype .inner .sec-g__video {
+  width: 100%;
 }
 
 .slide-studio .swiper-slide a {
@@ -1192,16 +1170,17 @@ section .sec-g__more::after {
   display: block;
 }
 .item .text-ara {
-  padding: 15px;
+  padding: 10px;
+  height: 100%;
   background-color: #144d37;
   color: white;
 }
 .item .text_ara__tit {
-  font-size: 1.2rem;
+  font-size: 14px;
   font-weight: bold;
 }
 .item .text_ara__cont {
-  font-size: 0.9rem;
+  font-size: 10px;
   line-height: 1.4;
 }
 
@@ -1210,4 +1189,22 @@ section .sec-g__more::after {
   .list li {
     flex: 1 0 calc(25% - 20px); /* 큰 화면에서 4열 */
   }
+}
+@media (max-width: 600px) {
+  .text-area {
+    font-size: 12px;
+  }
+}
+.text-area {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Adjust the number of lines as needed */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-area {
+  padding: 10px;
+  line-height: 1.5; /* Increase line spacing */
+  font-size: 14px; /* Adjust font size if needed */
 }/*# sourceMappingURL=styles.css.map */

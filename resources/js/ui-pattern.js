@@ -40,3 +40,5 @@ document.querySelectorAll('.item img').forEach((img) => {
         img.src = originalSrc; // 마우스 아웃 시 기본 이미지로 복원
     });
 });
+
+// 테스트!!

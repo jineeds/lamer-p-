@@ -105,18 +105,19 @@
         display: block;
     }
     .text-ara {
-        padding: 15px;
+        padding: 10px;
+        height: 100%;
         background-color: #144d37;
         color: white;
     }
 
     .text_ara__tit {
-        font-size: 1.2rem;
+        font-size: 14px;
         font-weight: bold;
     }
 
     .text_ara__cont {
-        font-size: 0.9rem;
+        font-size: 10px;
         line-height: 1.4;
     }
 }
@@ -126,4 +127,23 @@
     .list li {
         flex: 1 0 calc(25% - 20px); /* 큰 화면에서 4열 */
     }
+}
+
+@media (max-width: 600px) {
+    .text-area {
+        font-size: 12px;
+    }
+}
+
+.text-area {
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Adjust the number of lines as needed */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.text-area {
+    padding: 10px;
+    line-height: 1.5; /* Increase line spacing */
+    font-size: 14px; /* Adjust font size if needed */
 }
