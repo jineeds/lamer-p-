@@ -26,53 +26,17 @@
         <script defer src="../resources/js/ui-swiper.js"></script>
     </head>
     <body>
-        <style>
-            html,
-            body {
-                position: relative;
-                height: 100%;
-            }
-
-            body {
-                background: #eee;
-                font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-                font-size: 14px;
-                color: #000;
-                margin: 0;
-                padding: 0;
-            }
-
-            .swiper {
-                width: 100%;
-                height: 100%;
-            }
-
-            .product-info {
-                text-align: center;
-                font-size: 18px;
-                background: #fff;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .product-info img {
-                display: block;
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        </style>
         <header class="header">
             <img src="logo.png" alt="La Mer Logo" class="logo" />
             <nav class="nav">
+                <!-- 아이콘 삽입 예정 -->
                 <button>Menu</button>
                 <button>Search</button>
                 <button>Cart</button>
             </nav>
         </header>
 
-        <main id="container">
+        <main id="info-container">
             <div class="swiper product-info">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide"><img src="../resources/images/pattern/common/샘플1.avif" alt="샘플1" /></div>
@@ -84,20 +48,32 @@
                 <div class="swiper-pagination"></div>
             </div>
             <!-- Product Section -->
-            <section class="product">
-                <img src="product.jpg" alt="La Mer Product" class="product-image" />
-                <h1 class="product-title">Creme de La Mer</h1>
-                <p class="product-description">A luxurious cream that helps heal dryness.</p>
-                <div class="buttons">
-                    <button>Buy Now</button>
-                    <button>Add to Wishlist</button>
+            <section class="sec-g sec-title">
+                <div class="s2_inner">
+                    <div class="sec-g__tit"></div>
+                    <h3>럭셔리한 나이트 타임 리츄얼을 한 층 더 끌어올려줄 NEW 리쥬비네이팅 나이트 크림</h3>
+                </div>
+                <div class="swiper addSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../resources/images/pattern/common/마우스오버 샘플1.avif" />
+                            <p>단 하루만에 <br />87%가 경험한 부드러운 피부결<br />86%가 경험한 더욱 윤기나는 피부 속</p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../resources/images/pattern/common/마우스오버2 샘플.avif" />
+                            <p>4주 안에 <br />97%가 경험한 탄탄해진 피부<br />95%가 경험한 피부 컨디션 개선효과</p>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </section>
 
             <!-- Feature Section -->
-            <section class="features">
-                <h2>Popular Products</h2>
-                <div class="feature-cards">
+            <section class="sec-g sec__cont">
+                <h2>주요성분</h2>
+                <div class="sec__count cards">
                     <div class="card">
                         <img src="feature1.jpg" alt="Feature 1" />
                         <p>Product 1 Description</p>
