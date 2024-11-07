@@ -50,6 +50,18 @@
         display: none;
     }
 }
+.sec-video {
+    .sec-g__tit {
+        text-align: center;
+        strong {
+            font-size: 24px;
+            font-family: 'DM Serif Display', serif;
+        }
+        i {
+            font-size: 20px;
+        }
+    }
+}
 // section1-bestsellers
 .sec-bestseller {
     .inner {
@@ -147,7 +159,22 @@
         }
     }
 }
-
+// sect-facetype
+.sec-facetype {
+    .sec-g__cont {
+        img {
+            width: 100%;
+        }
+        .sec-g_img2 {
+            border-radius: 20px;
+            width: 70%;
+        }
+        .sec-g_img1 {
+            border-radius: 50%;
+            width: 40%;
+        }
+    }
+}
 // section5-service
 .sec-service {
     img {
@@ -203,24 +230,18 @@
             flex-wrap: nowrap;
             display: flex;
             justify-content: space-around;
-            // overflow: hidden;
-            // max-width: 100%;
-            // display: flex;
-            // font-family: Arial, sans-serif;
-            // flex-direction: row;
-            // justify-content: space-between;
-            // align-items: center;
-            // overflow: hidden;
 
-            .slide-best {
-                .swiper-wrapper {
-                    width: 300px;
-                }
+            .sec-g__cont {
+                .slide-best {
+                    .swiper-wrapper {
+                        width: 400px;
+                    }
 
-                .sec-g__tit {
-                    font-size: 30px;
-                    color: #123456;
-                    padding: 0px 75px;
+                    .sec-g__tit {
+                        font-size: 30px;
+                        color: #123456;
+                        padding: 0px 75px;
+                    }
                 }
             }
         }
@@ -230,26 +251,18 @@
         font-size: 1.875rem;
     }
     .sec-gift {
-        width: 100%;
-        // height: 100vh;
-        // padding: 0px 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        // margin: 10px;
-        .gift_card .gift_text p {
-            font-size: 1.875rem;
-        }
-
         .inner {
             display: flex;
             flex-wrap: nowrap;
             .sec-g__cont {
-                width: 100%;
-                height: 70vh;
-                background-size: cover;
-                border-radius: 15px;
-                transition: opacity 0.3s ease;
+                width: 70%;
+                source {
+                    // width: 70%;
+                    // height: 70vh;
+                    background-size: cover;
+                    border-radius: 20px;
+                    transition: opacity 0.3s ease;
+                }
             }
         }
     }
@@ -270,6 +283,16 @@
             margin-top: 10px;
             font-size: 19px;
             text-align: center;
+        }
+    }
+    .sec-service {
+        .sec-g__cont {
+            display: flex;
+            flex-direction: row; /* 가로 방향으로 변경 */
+            flex-wrap: nowrap;
+        }
+        .inner {
+            display: flex;
         }
     }
 }
@@ -299,17 +322,25 @@
     }
     .sec-bestseller {
         .inner {
-            position: relative;
-            flex-wrap: nowrap;
-            display: flex;
-            justify-content: space-around;
-            overflow: hidden;
+            display: flex; /* inner를 flex 컨테이너로 설정 */
+            justify-content: flex-start; /* 자식 요소들을 왼쪽으로 정렬 */
+            align-items: center; /* 수직 정렬 (필요하면 추가) */
+            // position: relative;
+            // flex-wrap: nowrap;
+            // display: flex;
+            // justify-content: space-around;
+            // overflow: hidden;
 
             .sec-g__tit {
-                position: relative;
-                z-index: 10;
-                background: #fff;
-                left: -150px;
+                margin-left: 0; /* 왼쪽 여백 제거 */
+                // position: relative;
+                // z-index: 10;
+                // background: #fff;
+                // left: -150px;
+                // width: 30%;
+                // display: flex;
+                // justify-content: center;
+                // align-items: flex-start;
             }
         }
     }
@@ -319,26 +350,21 @@
             overflow: hidden;
         }
     }
+
     .sec-gift {
         .inner {
             display: flex;
             flex-wrap: nowrap;
-            .sec-g__cont {
-                width: 100%;
-                height: 70vh;
+            justify-content: space-between;
+        }
+        .sec-g__cont {
+            width: 70%;
+            source {
+                // width: 70%;
+                // height: 70vh;
                 background-size: cover;
-                border-radius: 15px;
+                border-radius: 20px;
                 transition: opacity 0.3s ease;
-            }
-            .sec-g__cont {
-                width: 100%;
-                height: 100vh;
-                background-size: cover;
-                transition: opacity 0.3s ease;
-
-                source {
-                    border-radius: 15px;
-                }
             }
         }
     }
