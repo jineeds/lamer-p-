@@ -320,24 +320,24 @@
     object-fit: cover;
 }
 
-/* Responsive Adjustments for Tablet */
-@media (min-width: 600px) {
-    .feature-cards,
-    .category-cards {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
+// /* Responsive Adjustments for Tablet */
+// @media (min-width: 600px) {
+//     .feature-cards,
+//     .category-cards {
+//         flex-direction: row;
+//         justify-content: space-between;
+//     }
+// }
 
-/* Responsive Adjustments for Desktop */
-@media (min-width: 1024px) {
-    #container {
-        max-width: 1200px;
-        margin: 0 auto;
-    }
+// /* Responsive Adjustments for Desktop */
+// @media (min-width: 1024px) {
+//     #container {
+//         max-width: 1200px;
+//         margin: 0 auto;
+//     }
 
-    .header,
-    .footer {
-        padding: 20px 40px;
-    }
-}
+//     .header,
+//     .footer {
+//         padding: 20px 40px;
+//     }
+// }
