@@ -27,7 +27,7 @@
         .button {
             display: block;
             font-size: 100%;
-            vertical-align: middle;
+            // vertical-align: middle;
             border: 0 none;
             background-color: transparent;
             cursor: pointer;
@@ -147,7 +147,7 @@
 
 .text-area {
     display: -webkit-box;
-    -webkit-line-clamp: 2; /* Adjust the number of lines as needed */
+    // -webkit-line-clamp: 2; /* Adjust the number of lines as needed */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
