@@ -376,7 +376,6 @@ section .sec-g {
 .sec-facecare {
     width: 100%;
     height: 100vh;
-    background-color: yellow;
     margin-bottom: 500px;
     .inner {
         width: 100%;
@@ -391,7 +390,7 @@ section .sec-g {
             flex-direction: column;
             text-align: center;
         }
-        .seg-g_card {
+        .seg-g_card1 {
             width: 100%;
             display: flex;
             border-radius: 20px;
@@ -404,6 +403,62 @@ section .sec-g {
                 align-content: flex-end;
                 justify-content: center;
                 padding: 0 20px;
+                h2 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+            img {
+                width: 50%;
+                border-radius: 20px;
+            }
+        }
+        .seg-g_card2 {
+            width: 100%;
+            display: flex;
+            border-radius: 20px;
+            background-color: #144d37;
+            margin-bottom: 10px;
+            color: white;
+            .sec-g__text {
+                display: flex;
+                flex-direction: column;
+                align-content: flex-end;
+                justify-content: center;
+                padding: 0 20px;
+                h2 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+            img {
+                width: 50%;
+                border-radius: 20px;
+            }
+        }
+        .seg-g_card3 {
+            width: 100%;
+            display: flex;
+            border-radius: 20px;
+            background-color: #144d37;
+            margin-bottom: 10px;
+            color: white;
+            .sec-g__text {
+                display: flex;
+                flex-direction: column;
+                align-content: flex-end;
+                justify-content: center;
+                padding: 0 20px;
+                h2 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 12px;
+                }
             }
             img {
                 width: 50%;
@@ -411,4 +466,17 @@ section .sec-g {
             }
         }
     }
+    //     /* 기본 카드 스타일 */
+    //     .seg-g_card {
+    //         opacity: 0; /* 처음에는 보이지 않게 */
+    //         transform: translateY(100px); /* 아래쪽으로 이동 */
+    //         transition: opacity 0.5s, transform 0.5s; /* 애니메이션 속도 */
+    //     }
+
+    //     /* 화면에 들어올 때 애니메이션 클래스 추가 */
+    //     .seg-g_card.in-view {
+    //         opacity: 1;
+    //         transform: translateY(0); /* 원래 위치로 돌아옴 */
+    //     }
+    // }
 }
