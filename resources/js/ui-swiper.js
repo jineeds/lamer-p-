@@ -78,57 +78,101 @@ var swiper = new Swiper('.addSwiper', {
 //     y: 300,
 // });
 
-// 첫 번째 카드는 고정
-gsap.to('.seg-g_card1', {
-    position: 'fixed', // 고정
-    top: '10%', // 고정된 위치
+// let panels = gsap.utils.toArray('.seg-g_card1');
+
+// panels.forEach((panel, i) => {
+//     ScrollTrigger.create({
+//         trigger: panel,
+//         start: 'top top',
+//         pin: true,
+//         scrub: 0.5,
+//         pinSpacing: false,
+//     });
+// });
+// // 첫 번째 카드는 고정
+// gsap.to('.seg-g_card1', {
+//     position: 'fixed', // 고정
+//     top: '10%', // 고정된 위치
+//     scrollTrigger: {
+//         trigger: '.sec-facecare',
+//         start: 'top top', // .sec-facecare가 화면에 나타날 때
+//         end: 'bottom top', // .sec-facecare가 화면을 벗어날 때
+//         scrub: true, // 스크롤과 동기화
+//         markers: true, // 마커 표시 (디버깅 용도)
+//     },
+// });
+
+// // 두 번째 카드가 스크롤 시 나타나게 하기
+// gsap.fromTo(
+//     '.seg-g_card2',
+//     {
+//         opacity: 0, // 처음에는 보이지 않음
+//         y: '50px', // 약간 아래에서 시작
+//     },
+//     {
+//         opacity: 1, // 스크롤 시 완전히 보이게
+//         y: '0px', // 원래 위치로 이동
+//         duration: 1, // 애니메이션의 지속 시간
+//         scrollTrigger: {
+//             trigger: '.seg-g_card2', // .card-2가 화면에 나타날 때
+//             start: 'top bottom', // .card-2가 화면에 들어왔을 때
+//             end: 'bottom top', // .card-2가 화면을 벗어날 때
+//             scrub: 1, // 스크롤에 맞춰 애니메이션 동기화
+//             markers: true, // 마커 표시 (디버깅 용도)
+//         },
+//     }
+// );
+
+// // 세 번째 카드가 스크롤 시 나타나게 하기
+// gsap.fromTo(
+//     '.seg-g_card3',
+//     {
+//         opacity: 0, // 처음에는 보이지 않음
+//         y: '50px', // 약간 아래에서 시작
+//     },
+//     {
+//         opacity: 1, // 스크롤 시 완전히 보이게
+//         y: '0px', // 원래 위치로 이동
+//         duration: 1, // 애니메이션의 지속 시간
+//         scrollTrigger: {
+//             trigger: '.seg-g_card3', // .card-3가 화면에 나타날 때
+//             start: 'top bottom', // .card-3가 화면에 들어왔을 때
+//             end: 'bottom top', // .card-3가 화면을 벗어날 때
+//             scrub: 1, // 스크롤에 맞춰 애니메이션 동기화
+//             markers: true, // 마커 표시 (디버깅 용도)
+//         },
+//     }
+// );
+// -----------------
+// const timeline = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '#sample',
+//         start: '30% center',
+//         end: '101% bottom', // 트리거 종료 지점 확장
+//         scrub: 1, // 스크롤과 더 부드럽게 동기화
+//     },
+// });
+
+// timeline
+//     .fromTo(
+//         '.word01',
+//         { width: '0%', opacity: 0 },
+//         { width: 'auto', opacity: 1, duration: 1.2, ease: 'power2.out' } // 애니메이션 지속시간 증가
+//     )
+//     .fromTo('.word02', { width: '0%', opacity: 0 }, { width: 'auto', opacity: 1, duration: 1.2, ease: 'power2.out' });
+const timeline = gsap.timeline({
     scrollTrigger: {
-        trigger: '.sec-facecare',
-        start: 'top top', // .sec-facecare가 화면에 나타날 때
-        end: 'bottom top', // .sec-facecare가 화면을 벗어날 때
-        scrub: true, // 스크롤과 동기화
-        markers: true, // 마커 표시 (디버깅 용도)
+        trigger: '#sample',
+        start: '30% center',
+        end: '101% bottom', // 트리거 종료 지점 확장
+        scrub: 1, // 스크롤과 더 부드럽게 동기화
     },
 });
 
-// 두 번째 카드가 스크롤 시 나타나게 하기
-gsap.fromTo(
-    '.seg-g_card2',
-    {
-        opacity: 0, // 처음에는 보이지 않음
-        y: '50px', // 약간 아래에서 시작
-    },
-    {
-        opacity: 1, // 스크롤 시 완전히 보이게
-        y: '0px', // 원래 위치로 이동
-        duration: 1, // 애니메이션의 지속 시간
-        scrollTrigger: {
-            trigger: '.seg-g_card2', // .card-2가 화면에 나타날 때
-            start: 'top bottom', // .card-2가 화면에 들어왔을 때
-            end: 'bottom top', // .card-2가 화면을 벗어날 때
-            scrub: 1, // 스크롤에 맞춰 애니메이션 동기화
-            markers: true, // 마커 표시 (디버깅 용도)
-        },
-    }
-);
-
-// 세 번째 카드가 스크롤 시 나타나게 하기
-gsap.fromTo(
-    '.seg-g_card3',
-    {
-        opacity: 0, // 처음에는 보이지 않음
-        y: '50px', // 약간 아래에서 시작
-    },
-    {
-        opacity: 1, // 스크롤 시 완전히 보이게
-        y: '0px', // 원래 위치로 이동
-        duration: 1, // 애니메이션의 지속 시간
-        scrollTrigger: {
-            trigger: '.seg-g_card3', // .card-3가 화면에 나타날 때
-            start: 'top bottom', // .card-3가 화면에 들어왔을 때
-            end: 'bottom top', // .card-3가 화면을 벗어날 때
-            scrub: 1, // 스크롤에 맞춰 애니메이션 동기화
-            markers: true, // 마커 표시 (디버깅 용도)
-        },
-    }
-);
+timeline
+    .fromTo(
+        '.word01',
+        { height: 0, opacity: 0, transform: 'translateY(100%)' },
+        { height: 'auto', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' } // 애니메이션 지속시간 증가
+    )
+    .fromTo('.word02', { height: 0, opacity: 0, transform: 'translateY(100%)' }, { height: 'auto', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' });

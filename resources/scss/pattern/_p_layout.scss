@@ -274,6 +274,62 @@
         left: 0;
     }
 }
+#sample {
+    position: relative;
+    height: 100vh;
+    font-size: 4vw;
+    font-weight: 700;
+    color: white;
+    background-image: url(https://www.cremedelamer.com/media/export/cms/2022LaMer/Global%20CMS/Holiday/Slices/Gift%20Guide/Desktop/LM_2024_FY25_Holiday_PLP_Digital_Gift_Guide_Mockup_Desktop_slice_1.jpg);
+    background-size: cover;
+}
+
+#sample .sec-g__tit {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50vh 0;
+    color: white;
+    height: 100vh; /* 충분한 공간 확보 */
+    overflow: hidden; /* 세로로 나타날 때 외부 텍스트를 숨김 */
+    text-align: center;
+}
+
+#sample .sec-g__tit strong {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    // margin-right: 50px;
+    font-size: 30px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+// #sample .sec-g__tit p + p {
+//     margin-left: 50px;
+//     margin-bottom: 200px;
+//     text-align: center;
+// }
+
+#sample .sec-g__tit .word01 {
+    margin-top: 100px;
+}
+#sample .sec-g__tit .word02 {
+    margin-top: 170px;
+}
+
+#sample .sec-g__tit .word01,
+#sample .sec-g__tit .word02 {
+    padding: 20px;
+    position: absolute;
+    opacity: 0;
+    height: 0; /* 초기 상태에서 높이를 0으로 설정 */
+    overflow: hidden;
+    transform: translateY(-70%); /* 글자가 아래에서부터 올라오도록 설정 */
+    font-size: 20px;
+}
 
 section .sec-g {
     overflow: hidden;
