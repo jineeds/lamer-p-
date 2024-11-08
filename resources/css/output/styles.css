@@ -630,7 +630,7 @@ legend {
 }
 
 #sample .sec-g__tit {
-  position: sticky;
+  position: relative;
   top: 0;
   display: flex;
   align-items: center;
@@ -657,7 +657,7 @@ legend {
 }
 
 #sample .sec-g__tit .word02 {
-  margin-top: 170px;
+  margin-top: 200px;
 }
 
 #sample .sec-g__tit .word01,
@@ -667,8 +667,28 @@ legend {
   opacity: 0;
   height: 0; /* 초기 상태에서 높이를 0으로 설정 */
   overflow: hidden;
-  transform: translateY(-70%); /* 글자가 아래에서부터 올라오도록 설정 */
+  transform: translateY(100%); /* 글자가 아래에서부터 올라오도록 설정 */
   font-size: 20px;
+}
+
+#sample .sec-g__cont {
+  position: relative; /* 부모 요소는 상대적인 위치 */
+  width: 100%;
+  height: 100vh; /* 부모 요소 높이를 100%로 설정 */
+  overflow: hidden; /* 비디오가 영역을 벗어나지 않도록 */
+  z-index: 10;
+  padding: 0;
+}
+
+#sample .sec-g__cont video {
+  width: 100%; /* 비디오 너비를 화면에 맞추기 */
+  height: 100%; /* 비디오 높이를 화면에 맞추기 */
+  border-radius: 5%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transform: scale(0.5); /* 비디오 크기를 작게 시작 */
+  transform-origin: center center;
+  z-index: 5; /* 비디오가 다른 섹션 위에 표시되지 않도록 설정 */
 }
 
 section .sec-g {

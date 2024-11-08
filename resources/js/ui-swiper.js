@@ -160,6 +160,29 @@ var swiper = new Swiper('.addSwiper', {
 //         { width: 'auto', opacity: 1, duration: 1.2, ease: 'power2.out' } // 애니메이션 지속시간 증가
 //     )
 //     .fromTo('.word02', { width: '0%', opacity: 0 }, { width: 'auto', opacity: 1, duration: 1.2, ease: 'power2.out' });
+////////////// 끌자
+// const timeline = gsap.timeline({
+//     scrollTrigger: {
+//         trigger: '#sample',
+//         start: 'top top', // 애니메이션 시작 지점 조정
+//         end: 'bottom center', // 종료 지점 조정
+//         scrub: 1, // 스크롤에 따라 애니메이션이 부드럽게 진행되도록 설정
+//         markers: true,
+//     },
+// });
+
+// timeline
+//     .fromTo(
+//         '.word01',
+//         { maxHeight: 0, opacity: 0, transform: 'translateY(100%)' }, // 애니메이션 시작 상태
+//         { maxHeight: '500px', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' }
+//     )
+//     .fromTo(
+//         '.word02',
+//         { maxHeight: 0, opacity: 0, transform: 'translateY(100%)' }, // 애니메이션 시작 상태
+//         { maxHeight: '500px', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' }
+//     );
+
 const timeline = gsap.timeline({
     scrollTrigger: {
         trigger: '#sample',
@@ -176,3 +199,17 @@ timeline
         { height: 'auto', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' } // 애니메이션 지속시간 증가
     )
     .fromTo('.word02', { height: 0, opacity: 0, transform: 'translateY(100%)' }, { height: 'auto', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' });
+// ----------비디오
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('#sample .sec-g__cont video', {
+    scrollTrigger: {
+        markers: true, // 마커 표시
+        trigger: '#sample .sec-g__cont', // 트리거할 요소
+        start: 'top center', // 애니메이션 시작 위치
+        end: 'bottom top', // 애니메이션 종료 위치
+        scrub: true, // 스크롤과 애니메이션 동기화
+    },
+    scale: 1.5, // 비디오 크기를 1.5배로 설정 (기본 크기에서 커짐)
+    transformOrigin: 'center center', // 비디오가 가운데에서 커지도록 설정
+});
