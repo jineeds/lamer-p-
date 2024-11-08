@@ -705,6 +705,46 @@ section .sec-g__more::after {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.sec-facecare {
+  width: 100%;
+  height: 100vh;
+  background-color: yellow;
+  margin-bottom: 500px;
+}
+.sec-facecare .inner {
+  width: 100%;
+  height: 100vh;
+}
+.sec-facecare .inner .sec-g__cont {
+  width: 100%;
+  border-radius: 10px;
+}
+.sec-facecare .inner .sec-g__tit {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.sec-facecare .inner .seg-g_card {
+  width: 100%;
+  display: flex;
+  border-radius: 20px;
+  background-color: #144d37;
+  margin-bottom: 10px;
+  color: white;
+}
+.sec-facecare .inner .seg-g_card .sec-g__text {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: center;
+  padding: 0 20px;
+}
+.sec-facecare .inner .seg-g_card img {
+  width: 50%;
+  border-radius: 20px;
+}
+
 .slide-intro .swiper-slide {
   position: relative;
 }
