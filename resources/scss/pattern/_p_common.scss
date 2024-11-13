@@ -56,46 +56,49 @@
         content: '\f137';
     }
 }
+#swiper-main {
+    .swiper-wrapper {
+        width: 100%;
+        // background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+        // display: flex;
+        transition: transform 0.3s ease-in-out;
+        // flex-direction: column;
+        // flex-wrap: nowrap;
+        // justify-content: center;
+        // align-items: center;
 
-.swiper-wrapper_main {
-    width: 100%;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+        .swiper-slide {
+            // background: linear-gradient(to right, #061d27, #224352, #0b1d25);
 
-    .swiper-slide1 {
-        background-color: black;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        align-content: center;
-        img {
-            width: 100%;
-        }
-        .text-area {
-            color: white;
-            width: 100%;
-            padding: 20px;
-            font-family: 'playfair display';
-            margin-top: 50px;
-            .text-area__tit {
-                font-size: 30px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+            img {
+                width: 100%;
             }
-            .text-area__cont {
-                font-size: 25px;
-            }
-            .text-area_more {
-                background-color: white;
-                width: 100px;
-                height: 35px;
-                border-radius: 25px;
-                font-size: 18px;
-                margin-top: 20px;
+            .text-area {
+                color: white;
+                width: 100%;
+                padding: 20px;
+                font-family: 'playfair display';
+                margin-top: 50px;
+                .text-area__tit {
+                    font-size: 30px;
+                }
+                .text-area__cont {
+                    font-size: 25px;
+                }
+                .text-area_more {
+                    background-color: white;
+                    width: 100px;
+                    height: 35px;
+                    border-radius: 25px;
+                    font-size: 18px;
+                    margin-top: 20px;
+                }
             }
         }
     }
