@@ -144,44 +144,6 @@ var swiper = new Swiper('.addSwiper', {
 //     }
 // );
 // -----------------
-// const timeline = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: '#sample',
-//         start: '30% center',
-//         end: '101% bottom', // 트리거 종료 지점 확장
-//         scrub: 1, // 스크롤과 더 부드럽게 동기화
-//     },
-// });
-
-// timeline
-//     .fromTo(
-//         '.word01',
-//         { width: '0%', opacity: 0 },
-//         { width: 'auto', opacity: 1, duration: 1.2, ease: 'power2.out' } // 애니메이션 지속시간 증가
-//     )
-//     .fromTo('.word02', { width: '0%', opacity: 0 }, { width: 'auto', opacity: 1, duration: 1.2, ease: 'power2.out' });
-////////////// 끌자
-// const timeline = gsap.timeline({
-//     scrollTrigger: {
-//         trigger: '#sample',
-//         start: 'top top', // 애니메이션 시작 지점 조정
-//         end: 'bottom center', // 종료 지점 조정
-//         scrub: 1, // 스크롤에 따라 애니메이션이 부드럽게 진행되도록 설정
-//         markers: true,
-//     },
-// });
-
-// timeline
-//     .fromTo(
-//         '.word01',
-//         { maxHeight: 0, opacity: 0, transform: 'translateY(100%)' }, // 애니메이션 시작 상태
-//         { maxHeight: '500px', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' }
-//     )
-//     .fromTo(
-//         '.word02',
-//         { maxHeight: 0, opacity: 0, transform: 'translateY(100%)' }, // 애니메이션 시작 상태
-//         { maxHeight: '500px', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' }
-//     );
 
 const timeline = gsap.timeline({
     scrollTrigger: {
