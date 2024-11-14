@@ -126,18 +126,19 @@ var swiper = new Swiper('#swiper-main', {
     easing: 'ease', // 기본적인 easing (선택 사항)
 });
 
-swiper.on('slideChange', function () {
-    var index = swiper.realIndex; // 현재 슬라이드 인덱스
-    const slides = document.querySelectorAll('.swiper-slide');
+// swiper.on('slideChange', function () {
+//     var index = swiper.realIndex; // 현재 슬라이드 인덱스
+//     const slides = document.querySelectorAll('.swiper-slide');
 
-    // 현재 슬라이드에 배경을 설정
-    if (index === 0) {
-        slides[index].style.background = 'linear-gradient(to right, #F2994A, #93291E)';
-    } else if (index === 1) {
-        slides[index].style.background = 'linear-gradient(to right, #FFD194, #D1913C)';
-    } else if (index === 2) {
-        slides[index].style.background = 'linear-gradient(to right, #366479, #061d27)';
-    } else if (index === 3) {
-        slides[index].style.background = 'linear-gradient(to right, #ACBB78, #000000)';
-    }
-});
+//     // 현재 슬라이드에 배경을 설정
+//     if (index === 0) {
+//         slides[index].style.background = 'linear-gradient(to right, #F2994A, #93291E)';
+//     } else if (index === 1) {
+//         slides[index].style.background = 'linear-gradient(to right, #FFD194, #D1913C)';
+//     } else if (index === 2) {
+//         slides[index].style.background = 'linear-gradient(to right, #366479, #061d27)';
+//     } else if (index === 3) {
+//         slides[index].style.background = 'linear-gradient(to right, #ACBB78, #000000)';
+//     }
+// });
+// // 슬라이드 배경을 한번만 설정하도록 처리

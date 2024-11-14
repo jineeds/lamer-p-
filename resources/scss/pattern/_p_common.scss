@@ -59,6 +59,7 @@
 #swiper-main {
     .swiper-wrapper {
         width: 100%;
+        height: 100vh;
         // background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
         // display: flex;
         transition: transform 0.3s ease-in-out;
@@ -68,7 +69,9 @@
         // align-items: center;
 
         .swiper-slide {
-            // background: linear-gradient(to right, #061d27, #224352, #0b1d25);
+            // background-color: black;
+            // 대각선 방향으로 그라데이션 설정하기!
+            background: linear-gradient(135deg, #ada996, #dbdbdb, #eaeaea);
 
             display: flex;
             flex-direction: column-reverse;
@@ -80,7 +83,7 @@
                 width: 100%;
             }
             .text-area {
-                color: white;
+                color: black;
                 width: 100%;
                 padding: 20px;
                 font-family: 'playfair display';
@@ -88,8 +91,12 @@
                 .text-area__tit {
                     font-size: 30px;
                 }
+                .text-ara_tit2 {
+                    font-size: 23px;
+                }
                 .text-area__cont {
-                    font-size: 25px;
+                    font-size: 18px;
+                    color: black;
                 }
                 .text-area_more {
                     background-color: white;

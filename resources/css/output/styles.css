@@ -332,9 +332,11 @@ legend {
 
 #swiper-main .swiper-wrapper {
   width: 100%;
+  height: 100vh;
   transition: transform 0.3s ease-in-out;
 }
 #swiper-main .swiper-wrapper .swiper-slide {
+  background: linear-gradient(135deg, #ada996, #dbdbdb, #eaeaea);
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -346,7 +348,7 @@ legend {
   width: 100%;
 }
 #swiper-main .swiper-wrapper .swiper-slide .text-area {
-  color: white;
+  color: black;
   width: 100%;
   padding: 20px;
   font-family: "playfair display";
@@ -355,8 +357,12 @@ legend {
 #swiper-main .swiper-wrapper .swiper-slide .text-area .text-area__tit {
   font-size: 30px;
 }
+#swiper-main .swiper-wrapper .swiper-slide .text-area .text-ara_tit2 {
+  font-size: 23px;
+}
 #swiper-main .swiper-wrapper .swiper-slide .text-area .text-area__cont {
-  font-size: 25px;
+  font-size: 18px;
+  color: black;
 }
 #swiper-main .swiper-wrapper .swiper-slide .text-area .text-area_more {
   background-color: white;
