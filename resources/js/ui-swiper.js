@@ -142,3 +142,29 @@ var swiper = new Swiper('#swiper-main', {
 //     }
 // });
 // // 슬라이드 배경을 한번만 설정하도록 처리
+// ------------facecare
+gsap.registerPlugin(ScrollTrigger);
+
+const cards = gsap.utils.toArray('.seg-g_card');
+
+cards.forEach((card) => {
+    gsap.fromTo(
+        card,
+        {
+            opacity: 0,
+            y: 100,
+        },
+        {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            scrollTrigger: {
+                trigger: card,
+                start: 'top 80%',
+                end: 'top 30%',
+                scrub: true,
+                markers: false,
+            },
+        }
+    );
+});

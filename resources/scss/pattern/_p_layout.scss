@@ -338,7 +338,7 @@
     overflow: hidden; /* 비디오가 영역을 벗어나지 않도록 */
     z-index: 10;
     padding: 0;
-    background-color: black;
+    // background-color: black;
 }
 #sample .sec-g__cont video {
     width: 100%; /* 비디오 너비를 화면에 맞추기 */
@@ -461,112 +461,167 @@ section .sec-g {
     }
 }
 .sec-facecare {
-    width: 100%;
-    height: 100vh;
-    margin-top: 1100px;
     .inner {
         width: 100%;
-        height: 100vh;
-        .sec-g__cont {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .sec-g__tit {
-            font-size: 14px;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-        .seg-g_card1 {
-            width: 100%;
-            display: flex;
-            border-radius: 20px;
-            background-color: #144d37;
-            margin-bottom: 10px;
-            color: white;
-            .sec-g__text {
-                display: flex;
-                flex-direction: column;
-                align-content: flex-end;
-                justify-content: center;
-                padding: 0 20px;
-                h2 {
-                    font-size: 18px;
-                }
-                p {
-                    font-size: 12px;
-                }
-            }
-            img {
-                width: 50%;
-                border-radius: 20px;
-            }
-        }
-        .seg-g_card2 {
-            width: 100%;
-            display: flex;
-            border-radius: 20px;
-            background-color: #144d37;
-            margin-bottom: 10px;
-            color: white;
-            .sec-g__text {
-                display: flex;
-                flex-direction: column;
-                align-content: flex-end;
-                justify-content: center;
-                padding: 0 20px;
-                h2 {
-                    font-size: 18px;
-                }
-                p {
-                    font-size: 12px;
-                }
-            }
-            img {
-                width: 50%;
-                border-radius: 20px;
-            }
-        }
-        .seg-g_card3 {
-            width: 100%;
-            display: flex;
-            border-radius: 20px;
-            background-color: #144d37;
-            margin-bottom: 10px;
-            color: white;
-            .sec-g__text {
-                display: flex;
-                flex-direction: column;
-                align-content: flex-end;
-                justify-content: center;
-                padding: 0 20px;
-                h2 {
-                    font-size: 18px;
-                }
-                p {
-                    font-size: 12px;
-                }
-            }
-            img {
-                width: 50%;
-                border-radius: 20px;
-            }
-        }
+        max-width: 100vh;
+        margin: 0 auto;
+        padding: 0 20px;
+        margin-top: 600px;
     }
-    //     /* 기본 카드 스타일 */
-    //     .seg-g_card {
-    //         opacity: 0; /* 처음에는 보이지 않게 */
-    //         transform: translateY(100px); /* 아래쪽으로 이동 */
-    //         transition: opacity 0.5s, transform 0.5s; /* 애니메이션 속도 */
-    //     }
 
-    //     /* 화면에 들어올 때 애니메이션 클래스 추가 */
-    //     .seg-g_card.in-view {
-    //         opacity: 1;
-    //         transform: translateY(0); /* 원래 위치로 돌아옴 */
-    //     }
-    // }
+    .sec-g__tit {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .sec-g__tit h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .sec-g__tit p {
+        font-size: 1.2rem;
+        color: #666;
+    }
+
+    .seg-g_card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        opacity: 0; /* 처음에는 보이지 않게 설정 */
+        transform: translateY(100px); /* 카드가 아래에서 올라오는 효과 */
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .seg-g_card img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+        margin-right: 20px;
+    }
+
+    .sec-g__text {
+        max-width: 400px;
+    }
+
+    .sec-g__text h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .sec-g__text p {
+        font-size: 1rem;
+        color: #333;
+    }
 }
+// .sec-facecare {
+//     width: 100%;
+//     height: 100vh;
+//     margin-top: 500px;
+//     .inner {
+//         width: 100%;
+//         height: 100vh;
+//         .sec-g__cont {
+//             width: 100%;
+//             border-radius: 10px;
+//         }
+//         .sec-g__tit {
+//             font-size: 14px;
+//             display: flex;
+//             flex-direction: column;
+//             text-align: center;
+//         }
+//         .seg-g_card1 {
+//             width: 100%;
+//             display: flex;
+//             border-radius: 20px;
+//             background-color: #144d37;
+//             margin-bottom: 10px;
+//             color: white;
+//             .sec-g__text {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-content: flex-end;
+//                 justify-content: center;
+//                 padding: 0 20px;
+//                 h2 {
+//                     font-size: 18px;
+//                 }
+//                 p {
+//                     font-size: 12px;
+//                 }
+//             }
+//             img {
+//                 width: 50%;
+//                 border-radius: 20px;
+//             }
+//         }
+//         .seg-g_card2 {
+//             width: 100%;
+//             display: flex;
+//             border-radius: 20px;
+//             background-color: #144d37;
+//             margin-bottom: 10px;
+//             color: white;
+//             .sec-g__text {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-content: flex-end;
+//                 justify-content: center;
+//                 padding: 0 20px;
+//                 h2 {
+//                     font-size: 18px;
+//                 }
+//                 p {
+//                     font-size: 12px;
+//                 }
+//             }
+//             img {
+//                 width: 50%;
+//                 border-radius: 20px;
+//             }
+//         }
+//         .seg-g_card3 {
+//             width: 100%;
+//             display: flex;
+//             border-radius: 20px;
+//             background-color: #144d37;
+//             margin-bottom: 10px;
+//             color: white;
+//             .sec-g__text {
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-content: flex-end;
+//                 justify-content: center;
+//                 padding: 0 20px;
+//                 h2 {
+//                     font-size: 18px;
+//                 }
+//                 p {
+//                     font-size: 12px;
+//                 }
+//             }
+//             img {
+//                 width: 50%;
+//                 border-radius: 20px;
+//             }
+//         }
+//     }
+//     //     /* 기본 카드 스타일 */
+//     //     .seg-g_card {
+//     //         opacity: 0; /* 처음에는 보이지 않게 */
+//     //         transform: translateY(100px); /* 아래쪽으로 이동 */
+//     //         transition: opacity 0.5s, transform 0.5s; /* 애니메이션 속도 */
+//     //     }
+
+//     //     /* 화면에 들어올 때 애니메이션 클래스 추가 */
+//     //     .seg-g_card.in-view {
+//     //         opacity: 1;
+//     //         transform: translateY(0); /* 원래 위치로 돌아옴 */
+//     //     }
+//     // }
+// }
 // #container {
 //     background-color: rgb(14, 2, 65);
 // }
