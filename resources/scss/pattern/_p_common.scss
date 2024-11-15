@@ -60,13 +60,8 @@
     .swiper-wrapper {
         width: 100%;
         height: 100vh;
-        // background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
-        // display: flex;
+
         transition: transform 0.3s ease-in-out;
-        // flex-direction: column;
-        // flex-wrap: nowrap;
-        // justify-content: center;
-        // align-items: center;
 
         .swiper-slide {
             // background-color: black;
@@ -89,22 +84,25 @@
                 font-family: 'playfair display';
                 margin-top: 50px;
                 .text-area__tit {
-                    font-size: 30px;
+                    font-size: 40px;
+                    color: $gray-100;
                 }
                 .text-ara_tit2 {
-                    font-size: 23px;
+                    font-size: 32px;
+                    color: $gray-100;
                 }
                 .text-area__cont {
-                    font-size: 18px;
-                    color: black;
+                    font-size: 25px;
+                    color: $gray-70;
                 }
                 .text-area_more {
                     background-color: white;
                     width: 100px;
                     height: 35px;
                     border-radius: 25px;
-                    font-size: 18px;
+                    font-size: 19px;
                     margin-top: 20px;
+                    color: $gray-90;
                 }
             }
         }

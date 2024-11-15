@@ -137,6 +137,18 @@ body {
     color: $font-color-base;
     font-weight: $font-weight-base;
 }
+#container {
+    h3 {
+        font-size: $font-section-base;
+        color: $secondary-60;
+        padding: 15px 0 10px;
+    }
+    h2 {
+        font-size: $font-title-base;
+        padding: 10px 0 5px;
+        color: $gray-80;
+    }
+}
 
 a {
     color: $font-color-base;
@@ -149,6 +161,18 @@ a {
     }
 }
 @media screen and (min-width: 1280px) {
+    #container {
+        h3 {
+            font-size: 32px;
+            color: $secondary-60;
+            padding: 15px 0 10px;
+        }
+        h2 {
+            font-size: $font-title-base;
+            padding: 10px 0 5px;
+            color: $gray-80;
+        }
+    }
     a {
         color: $font-color-base;
         text-decoration: none;
