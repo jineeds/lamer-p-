@@ -822,6 +822,8 @@ section .sec-g__more::after {
 .sec-bestseller .sec-g__tit {
   position: relative;
   z-index: 10;
+  background: #fff;
+  width: 100%;
 }
 .sec-bestseller .slide-best {
   width: 100%;
@@ -1132,9 +1134,12 @@ footer p {
   }
   .sec-bestseller .inner {
     position: relative;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-content: space-around;
+    align-items: center;
   }
   .sec-bestseller .inner .sec-g__cont .slide-best .swiper-wrapper {
     width: 400px;
@@ -1305,9 +1310,11 @@ footer p {
     z-index: 5; /* 비디오가 다른 섹션 위에 표시되지 않도록 설정 */
   }
   .sec-bestseller .inner {
-    display: flex; /* inner를 flex 컨테이너로 설정 */
-    justify-content: flex-start; /* 자식 요소들을 왼쪽으로 정렬 */
-    align-items: center; /* 수직 정렬 (필요하면 추가) */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
   }
   .sec-bestseller .inner .sec-g__tit {
     margin-left: 0; /* 왼쪽 여백 제거 */

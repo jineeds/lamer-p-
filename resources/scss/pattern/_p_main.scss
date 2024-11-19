@@ -248,9 +248,12 @@
     .sec-bestseller {
         .inner {
             position: relative;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-end;
+            flex-direction: row;
+            align-content: space-around;
+            align-items: center;
 
             .sec-g__cont {
                 .slide-best {
@@ -465,9 +468,11 @@
 
     .sec-bestseller {
         .inner {
-            display: flex; /* inner를 flex 컨테이너로 설정 */
-            justify-content: flex-start; /* 자식 요소들을 왼쪽으로 정렬 */
-            align-items: center; /* 수직 정렬 (필요하면 추가) */
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
 
             .sec-g__tit {
                 margin-left: 0; /* 왼쪽 여백 제거 */
