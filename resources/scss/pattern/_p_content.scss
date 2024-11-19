@@ -2,16 +2,16 @@
 .sec-1-title {
     p {
         display: flex;
-        padding: 0px 25px;
+        padding: 10px 18px;
         margin: 10px 10px;
         border-radius: 20px;
-        font-size: small;
-        color: white;
-        background: gray;
+        font-size: 18px;
+        color: $white;
+        background: $gray-50;
         text-align: center;
     }
     .sec-2_tit {
-        background: #144d37;
+        background: #002855;
     }
 }
 .sec-option {
@@ -111,43 +111,25 @@
         display: flex;
         padding: 10px;
         height: 100%;
-        background-color: #144d37;
-        color: white;
+        background: #00162f;
+        color: $white;
         flex-direction: column;
         align-content: flex-start;
         justify-content: center;
         strong {
-            font-size: 14px;
-            font-weight: bold;
+            font-size: 16px;
+
             p {
-                font-size: 12px;
-                color: gray;
+                font-size: 14px;
+                color: $gray-50;
             }
         }
-    }
-
-    // .text_ara__cont {
-    //     font-size: 10px;
-    //     line-height: 1.4;
-    // }
-}
-
-/* 반응형 설정 */
-@media screen and (min-width: 1024px) {
-    .list li {
-        flex: 1 0 calc(25% - 20px); /* 큰 화면에서 4열 */
-    }
-}
-
-@media (max-width: 600px) {
-    .text-area {
-        font-size: 12px;
     }
 }
 
 .text-area {
     display: -webkit-box;
-    // -webkit-line-clamp: 2; /* Adjust the number of lines as needed */
+
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -320,24 +302,34 @@
     object-fit: cover;
 }
 
-// /* Responsive Adjustments for Tablet */
-// @media (min-width: 600px) {
-//     .feature-cards,
-//     .category-cards {
-//         flex-direction: row;
-//         justify-content: space-between;
-//     }
-// }
-
-// /* Responsive Adjustments for Desktop */
-// @media (min-width: 1024px) {
-//     #container {
-//         max-width: 1200px;
-//         margin: 0 auto;
-//     }
-
-//     .header,
-//     .footer {
-//         padding: 20px 40px;
-//     }
-// }
+/* 반응형 설정 */
+@media screen and (min-width: 600px) {
+    .item .text-ara {
+        strong {
+            font-size: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: $gray-50;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .list li {
+        flex: 1 0 calc(25% - 20px); /* 큰 화면에서 4열 */
+    }
+    .sec-1-title {
+        p {
+            font-size: 23px;
+        }
+    }
+    .item .text-ara {
+        strong {
+            font-size: 23px;
+        }
+        p {
+            font-size: 19px;
+            color: $gray-50;
+        }
+    }
+}
