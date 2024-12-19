@@ -22,7 +22,7 @@ var swiper = new Swiper('.slide-studio', {
             spaceBetween: 20,
         },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 30,
         },
     },
@@ -35,10 +35,25 @@ var swiper = new Swiper('.slide-studio', {
 });
 
 var swiper = new Swiper('.slide-best', {
+    slidesPerView: 1,
     spaceBetween: 20,
     pagination: {
         el: '.slide-best .swiper-pagination',
         type: 'fraction',
+    },
+    breakpoints: {
+        600: {
+            slidesPerView: 2, // 1200px 이상에서는 1줄에 4개씩 보이기
+            grid: {
+                rows: 1,
+            },
+        },
+        1024: {
+            slidesPerView: 4, // 1200px 이상에서는 1줄에 4개씩 보이기
+            grid: {
+                rows: 1,
+            },
+        },
     },
 
     loop: true, // 슬라이더가 무한 반복되도록 설정
@@ -66,6 +81,26 @@ var swiper = new Swiper('.addSwiper', {
         clickable: true,
     },
 });
+
+var swiper = new Swiper('#swiper-main', {
+    loop: true, // 슬라이드 끝에서 다시 처음으로 돌아가도록 설정
+    autoplay: {
+        delay: 4000, // 슬라이드 전환 간격 (3초)
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true, // 페이지네이션 클릭 가능하도록 설정
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    spaceBetween: 10, // 슬라이드 간의 간격
+    slidesPerView: 1, // 한 번에 보이는 슬라이드 개수
+    speed: 800, // 슬라이드 전환 속도 (0.8초)
+    easing: 'ease', // 기본적인 easing (선택 사항)
+});
+
 // gsap
 
 // -----------------
@@ -86,25 +121,6 @@ timeline
         { height: 'auto', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' } // 애니메이션 지속시간 증가
     )
     .fromTo('.word02', { height: 0, opacity: 0, transform: 'translateY(100%)' }, { height: 'auto', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' });
-
-var swiper = new Swiper('#swiper-main', {
-    loop: true, // 슬라이드 끝에서 다시 처음으로 돌아가도록 설정
-    autoplay: {
-        delay: 4000, // 슬라이드 전환 간격 (3초)
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true, // 페이지네이션 클릭 가능하도록 설정
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-    spaceBetween: 10, // 슬라이드 간의 간격
-    slidesPerView: 1, // 한 번에 보이는 슬라이드 개수
-    speed: 800, // 슬라이드 전환 속도 (0.8초)
-    easing: 'ease', // 기본적인 easing (선택 사항)
-});
 
 // ----------비디오 확대
 gsap.registerPlugin(ScrollTrigger);

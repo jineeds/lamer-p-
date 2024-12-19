@@ -977,10 +977,6 @@ footer p {
   font-size: 20px;
 }
 
-.sec-bestseller .inner {
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .sec-bestseller .sec-g__tit {
   background: #fff;
 }
@@ -1118,28 +1114,17 @@ footer p {
     align-items: center;
     align-content: space-around;
     flex-wrap: nowrap;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 20px;
-    gap: 14px;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
   .sec-facecare .inner .seg-g_card img {
-    width: 50%;
+    width: 30%;
   }
   .sec-facecare .inner .seg-g_card .sec-g__text h2 {
     font-size: 30px;
   }
   .sec-facecare .inner .seg-g_card .sec-g__text p {
     font-size: 15px;
-  }
-  .sec-bestseller .inner {
-    position: relative;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    align-content: space-around;
-    align-items: center;
   }
   .sec-bestseller .inner .sec-g__cont .slide-best .swiper-wrapper {
     width: 400px;
@@ -1159,7 +1144,7 @@ footer p {
     gap: 100px;
   }
   .sec-gift .inner .sec-g__cont {
-    width: 50%;
+    width: 40%;
   }
   .sec-gift .inner .sec-g__cont source {
     background-size: cover;
@@ -1185,8 +1170,10 @@ footer p {
   }
   .sec-service .sec-g__cont {
     display: flex;
-    flex-direction: row; /* 가로 방향으로 변경 */
+    flex-direction: row-reverse;
+    align-items: center;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
   .sec-service .inner {
     display: flex;
@@ -1230,23 +1217,21 @@ footer p {
   .sec-facecare .inner .sec-g__tit p {
     font-size: 20px;
   }
-  .sec-facecare .inner .seg-g_card {
+  .sec-facecare .inner .sec-facecare .inner .seg-g_card {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     align-content: space-around;
     flex-wrap: nowrap;
-    width: 100%;
-    justify-content: space-evenly;
-    padding: 20px;
+    justify-content: space-between;
   }
-  .sec-facecare .inner .seg-g_card img {
+  .sec-facecare .inner .sec-facecare .inner .seg-g_card img {
     width: 40%;
   }
-  .sec-facecare .inner .seg-g_card .sec-g__text h2 {
+  .sec-facecare .inner .sec-facecare .inner .seg-g_card .sec-g__text h2 {
     font-size: 40px;
   }
-  .sec-facecare .inner .seg-g_card .sec-g__text p {
+  .sec-facecare .inner .sec-facecare .inner .seg-g_card .sec-g__text p {
     font-size: 20px;
   }
   #swiper-main .swiper-wrapper .swiper-slide {
@@ -1307,13 +1292,6 @@ footer p {
     transform: scale(0.5); /* 비디오 크기를 작게 시작 */
     transform-origin: center center;
     z-index: 5; /* 비디오가 다른 섹션 위에 표시되지 않도록 설정 */
-  }
-  .sec-bestseller .inner {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
   }
   .sec-bestseller .inner .sec-g__tit {
     margin-left: 0; /* 왼쪽 여백 제거 */
