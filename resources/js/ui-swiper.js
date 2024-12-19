@@ -86,7 +86,7 @@ timeline
         { height: 'auto', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' } // 애니메이션 지속시간 증가
     )
     .fromTo('.word02', { height: 0, opacity: 0, transform: 'translateY(100%)' }, { height: 'auto', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' });
-// ----------비디오
+// ----------비디오 확대
 gsap.registerPlugin(ScrollTrigger);
 
 gsap.to('#sample .sec-g__cont video', {
@@ -97,15 +97,10 @@ gsap.to('#sample .sec-g__cont video', {
         end: 'bottom top', // 애니메이션 종료 위치
         scrub: true, // 스크롤과 애니메이션 동기화
     },
-    scale: 1.5, // 비디오 크기를 1.5배로 설정 (기본 크기에서 커짐)
+    scale: 1, // 비디오 크기를 1.5배로 설정 (기본 크기에서 커짐)
+    borderRadius: '10px', // 둥근 사각형 형태로 변경
     transformOrigin: 'center center', // 비디오가 가운데에서 커지도록 설정
 });
-// -------메인
-// var swiper = new Swiper('#swiper-main', {
-//     pagination: {
-//         el: '.swiper-pagination',
-//     },
-// });
 
 var swiper = new Swiper('#swiper-main', {
     loop: true, // 슬라이드 끝에서 다시 처음으로 돌아가도록 설정
@@ -126,22 +121,6 @@ var swiper = new Swiper('#swiper-main', {
     easing: 'ease', // 기본적인 easing (선택 사항)
 });
 
-// swiper.on('slideChange', function () {
-//     var index = swiper.realIndex; // 현재 슬라이드 인덱스
-//     const slides = document.querySelectorAll('.swiper-slide');
-
-//     // 현재 슬라이드에 배경을 설정
-//     if (index === 0) {
-//         slides[index].style.background = 'linear-gradient(to right, #F2994A, #93291E)';
-//     } else if (index === 1) {
-//         slides[index].style.background = 'linear-gradient(to right, #FFD194, #D1913C)';
-//     } else if (index === 2) {
-//         slides[index].style.background = 'linear-gradient(to right, #366479, #061d27)';
-//     } else if (index === 3) {
-//         slides[index].style.background = 'linear-gradient(to right, #ACBB78, #000000)';
-//     }
-// });
-// // 슬라이드 배경을 한번만 설정하도록 처리
 // ------------facecare
 gsap.registerPlugin(ScrollTrigger);
 

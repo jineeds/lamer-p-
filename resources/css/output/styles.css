@@ -1302,7 +1302,6 @@ footer p {
   #sample .sec-g__cont video {
     width: 100%; /* 비디오 너비를 화면에 맞추기 */
     height: 100vh; /* 비디오 높이를 화면에 맞추기 */
-    border-radius: 50%;
     -o-object-fit: cover;
        object-fit: cover;
     transform: scale(0.5); /* 비디오 크기를 작게 시작 */
