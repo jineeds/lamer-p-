@@ -86,21 +86,6 @@ timeline
         { height: 'auto', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' } // 애니메이션 지속시간 증가
     )
     .fromTo('.word02', { height: 0, opacity: 0, transform: 'translateY(100%)' }, { height: 'auto', opacity: 1, transform: 'translateY(0)', duration: 1.2, ease: 'power2.out' });
-// ----------비디오 확대
-gsap.registerPlugin(ScrollTrigger);
-
-gsap.to('#sample .sec-g__cont video', {
-    scrollTrigger: {
-        markers: true, // 마커 표시
-        trigger: '#sample .sec-g__cont', // 트리거할 요소
-        start: 'top center', // 애니메이션 시작 위치
-        end: 'bottom top', // 애니메이션 종료 위치
-        scrub: true, // 스크롤과 애니메이션 동기화
-    },
-    scale: 1, // 비디오 크기를 1.5배로 설정 (기본 크기에서 커짐)
-    borderRadius: '10px', // 둥근 사각형 형태로 변경
-    transformOrigin: 'center center', // 비디오가 가운데에서 커지도록 설정
-});
 
 var swiper = new Swiper('#swiper-main', {
     loop: true, // 슬라이드 끝에서 다시 처음으로 돌아가도록 설정
@@ -119,6 +104,22 @@ var swiper = new Swiper('#swiper-main', {
     slidesPerView: 1, // 한 번에 보이는 슬라이드 개수
     speed: 800, // 슬라이드 전환 속도 (0.8초)
     easing: 'ease', // 기본적인 easing (선택 사항)
+});
+
+// ----------비디오 확대
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to('#sample .sec-g__cont video', {
+    scrollTrigger: {
+        markers: true, // 마커 표시
+        trigger: '#sample .sec-g__cont', // 트리거할 요소
+        start: 'top center', // 애니메이션 시작 위치
+        end: 'bottom top', // 애니메이션 종료 위치
+        scrub: true, // 스크롤과 애니메이션 동기화
+    },
+    scale: 1, // 비디오 크기를 1.5배로 설정 (기본 크기에서 커짐)
+    borderRadius: '10px', // 둥근 사각형 형태로 변경
+    transformOrigin: 'center center', // 비디오가 가운데에서 커지도록 설정
 });
 
 // ------------facecare
