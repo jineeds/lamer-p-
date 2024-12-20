@@ -163,6 +163,39 @@
     }
 }
 
+// FOOTER
+#footer {
+    background-color: $secondary-80;
+    margin: 0 auto;
+    padding: 20px;
+    .footer-wrap {
+        color: white;
+    }
+    .footer_top {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        .fotter_left {
+            width: 50%;
+            .newstitle {
+                font-size: 25px;
+            }
+            .cs_info {
+                margin-top: 30px;
+            }
+        }
+        .footer_menu {
+            font-weight: 600;
+            padding: 10px 10px;
+            a {
+                font-size: 25px;
+                text-align: left;
+                color: white;
+            }
+        }
+    }
+}
+
 // tablet
 @media screen and (min-width: 600px) {
     #swiper-main .swiper-wrapper .swiper-slide {
@@ -207,53 +240,9 @@
             margin-top: 250px;
         }
     }
-    .sec-facecare {
-        .inner {
-            margin-top: 600px;
 
-            .sec-g__tit {
-                text-align: center;
-                h3 {
-                    font-size: 50px;
-                }
-                p {
-                    font: 30px;
-                }
-            }
-            .seg-g_card {
-                display: flex;
-                flex-direction: row-reverse;
-                align-items: center;
-                align-content: space-around;
-                flex-wrap: nowrap;
-                justify-content: space-between;
-
-                margin-bottom: 20px;
-
-                img {
-                    width: 30%;
-                }
-                .sec-g__text {
-                    h2 {
-                        font-size: 30px;
-                    }
-                    p {
-                        font-size: 15px;
-                    }
-                }
-            }
-        }
-    }
     .sec-bestseller {
         .inner {
-            // position: relative;
-            // flex-wrap: wrap;
-            // display: flex;
-            // justify-content: flex-end;
-            // flex-direction: row;
-            // align-content: space-around;
-            // align-items: center;
-
             .sec-g__cont {
                 .slide-best {
                     .swiper-wrapper {

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>KRDS themplate</title>
+        <title>BRAND</title>
         <meta property="og:type" content="website" />
         <meta property="og:title" content="페이지 제목" />
         <meta property="og:description" content="페이지 설명" />
@@ -19,34 +19,166 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="../resources/css/pattern_css.css" />
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script defer src="../resources/js/include.js"></script>
         <script defer src="../resources/js/ui-pattern.js"></script>
         <script defer src="../resources/js/ui-swiper.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     </head>
     <body>
-        <header>서브페이지 헤더</header>
-        <div class="product-mainvisual">
-            <div class="s1_inner">
-                <div class="product_cont">
-                    <a href="#"
-                        ><picture> <img src="../resources/images/pattern/common/서브페이지/제품리스트 배너3.avif" alt="메인배너 임시" /></picture>
-                        <div class="text-area">
-                            <strong>BEST SELLER</strong>
-                            <p>베스트 셀러</p>
-                        </div>
-                    </a>
-                </div>
+        <header>서브페이지 - 브랜드 헤더</header>
+        <div class="sub-brand_main">
+            <div class="sub-brand_text">
+                <h1>Our Brnad</h1>
+                <p>모든 것은 바다에서 시작됩니다.</p>
+            </div>
+            <div class="sub-b vidieo_content">
+                <video id="video-pc" autoplay="" loop="" muted="" playsinline="" controls="" style="width: 100%">
+                    <source src="../resources/images/pattern/common/sub_main1_video.mp4" type="video/mp4" />
+                </video>
             </div>
         </div>
-        <main id="subpage-brand_container">
-            <section class="sec-g sec-brand">
-                <div class="sec-__tit"></div>
-                <strong>OUR BRAND</strong>
-                <p>브랜드 소개</p>
-            </section>
-        </main>
-        <footer id="footer" include-html="./layout/footer.html"></footer>
+        <seciton>
+            <div class="sub-b intro">
+                <div class="intro_left">
+                    <div class="inrto_text">
+                        <p class="b_txt">바다의 깊은 영감, 피부에 담다</p>
+                        <p class="b_txt">발효의 정교함이 빚어낸 라메르만의 혁신</p>
+                        <p class="b_txt">시그니처 기술로 완성된 고유의 럭셔리 스킨케어</p>
+                        <p class="b_txt">미라클 브로스™, 피부의 새로운 기적을 열다</p>
+                        <p class="b_txt">안티에이징의 특별함, 이제 당신의 피부에서 빛나다</p>
+                    </div>
+                </div>
+                <div class="intro_right">
+                    <div class="intro_img">
+                        <li><img src="../resources/images/pattern/common/sub_b_intro1.avif" alt="" /></li>
+                        <li><img src="../resources/images/pattern/common/sub_b_intro2.avif" alt="" /></li>
+                        <li><img src="../resources/images/pattern/common/sub_b_intro3.avif" alt="" /></li>
+                        <li><img src="../resources/images/pattern/common/sub_b_intro4.avif" alt="" /></li>
+                        <li><img src="../resources/images/pattern/common/sub_b_intro5.avif" alt="" /></li>
+                    </div>
+                </div>
+            </div>
+        </seciton>
+        <!-- 섹션 추가할거임 -->
+        <div>
+            <strong>환경적 스트레스 요인으로 인해서 피부 노화는 현재도 진행 중입니다.</strong>
+            <p>미라클 브로스는 피부 본연의 에너지를 증가시켜 피부를 건강하게 관리하며 노화의 근본 원인을 감소시켜줍니다. 피부의 아름다움을 약속하며 재생 에너지를 전달합니다.</p>
+        </div>
+        <!-- 챗 작성한거 -->
+        <section class="sub-b brand_ad outer">
+            <div class="sub-b inner">
+                <div class="box-warp1">
+                    <div class="sub-b ad_text">
+                        <div class="heading section-heading">
+                            <h2>BARRIER STRENGTH</h2>
+                        </div>
+                        <div class="content">
+                            <p>균형 잡힌 외모와 외부 자극에 강한 피부 장벽을 만들 수 있도록 도와줍니다.</p>
+                        </div>
+                    </div>
+                    <div class="sub-b ad_img bg">
+                        <video id="video-pc" autoplay loop muted playsinline controls style="width: 100%">
+                            <source src="../resources/images/pattern/common/sub_b_ad1.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sub-b brand_ad outer">
+            <div class="sub-b inner">
+                <div class="box-warp2">
+                    <div class="sub-b ad_text">
+                        <div class="heading section-heading">
+                            <h2>CELLULAR RECHARGE</h2>
+                        </div>
+                        <div class="content">
+                            <p>피부 본연의 에너지를 증가시켜 건강한 피부로 관리하며 활기찬 모습을 되찾을 수 있도록 도와줍니다.</p>
+                        </div>
+                    </div>
+                    <div class="sub-b ad_img bg">
+                        <video id="video-pc" autoplay loop muted playsinline controls style="width: 100%">
+                            <source src="../resources/images/pattern/common/sub_b_ad2.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sub-b brand_ad outer">
+            <div class="sub-b inner">
+                <div class="box-warp3">
+                    <div class="sub-b ad_text">
+                        <div class="heading section-heading">
+                            <h2>PAPID RESOLUTION</h2>
+                        </div>
+                        <div class="content">
+                            <p>만성적인 민감성 징후를 진정시키며 노화의 근본 원인을 줄여 피부 자극 반응 차단을 도와줍니다.</p>
+                        </div>
+                    </div>
+                    <div class="sub-b ad_img bg">
+                        <video id="video-pc" autoplay loop muted playsinline controls style="width: 100%">
+                            <source src="../resources/images/pattern/common/sub_b_ad3.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 내가 작성한거 -->
+        <!-- <section class="sub-b brand_ad">
+            <div class="sub-b inner">
+                <div class="box-warp1">
+                    <div class="sub-b ad_text">
+                        <div class="heading">
+                            <h2>BARRIER STRENGTH</h2>
+                        </div>
+                        <div class="content">
+                            <p>균형 잡힌 외모와 외부 자극에 강한 피부 장벽을 만들 수 있도록 도와줍니다.</p>
+                        </div>
+                    </div>
+                    <div class="sub-b ad_img">
+                        <video id="video-pc" autoplay="" loop="" muted="" playsinline="" controls="" style="width: 100%">
+                            <source src="../resources/images/pattern/common/sub_b_ad1.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="box-warp2">
+                    <div class="sub-b ad_text">
+                        <div class="heading">
+                            <h2>CELLULAR RECHARGE</h2>
+                        </div>
+                        <div class="content">
+                            <p>피부 본연의 에너지를 증가시켜 겅간한 피부로 관리하며 활기찬 모습을 되찾을 수 있도록 도와줍니다.</p>
+                        </div>
+                    </div>
+                    <div class="sub-b ad_img">
+                        <video id="video-pc" autoplay="" loop="" muted="" playsinline="" controls="" style="width: 100%">
+                            <source src="../resources/images/pattern/common/sub_b_ad2.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+                <div class="box-warp3">
+                    <div class="sub-b ad_text">
+                        <div class="heading">
+                            <h2>PAPID RESOLUTION</h2>
+                        </div>
+                        <div class="content">
+                            <p>만성적인 민감성 징후를 진정시키며 노화의 근본 원인을 줄여 피부 자극 반응 차단을 도와줍니다.</p>
+                        </div>
+                    </div>
+
+                    <div class="sub-b ad_img">
+                        <video id="video-pc" autoplay="" loop="" muted="" playsinline="" controls="" style="width: 100%">
+                            <source src="../resources/images/pattern/common/sub_b_ad3.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section> -->
     </body>
 </html>
