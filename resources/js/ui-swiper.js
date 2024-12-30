@@ -191,54 +191,54 @@ cards.forEach((card) => {
 //     );
 // });
 
-gsap.registerPlugin(Observer);
+// gsap.registerPlugin(Observer);
 
-let sections = document.querySelectorAll('.sub-b.brand_ad'), // 섹션 선택
-    videos = document.querySelectorAll('.sub-b.ad_img video'), // 비디오 선택
-    headings = gsap.utils.toArray('.heading h2'), // 제목 선택
-    outerWrappers = gsap.utils.toArray('.sub-b.inner'), // 내부 래퍼 선택
-    currentIndex = -1, // 현재 활성화된 섹션 인덱스
-    wrap = gsap.utils.wrap(0, sections.length),
-    animating = false;
+// let sections = document.querySelectorAll('.sub-b.brand_ad'), // 섹션 선택
+//     videos = document.querySelectorAll('.sub-b.ad_img video'), // 비디오 선택
+//     headings = gsap.utils.toArray('.heading h2'), // 제목 선택
+//     outerWrappers = gsap.utils.toArray('.sub-b.inner'), // 내부 래퍼 선택
+//     currentIndex = -1, // 현재 활성화된 섹션 인덱스
+//     wrap = gsap.utils.wrap(0, sections.length),
+//     animating = false;
 
-// 초기 상태 설정
-gsap.set(outerWrappers, { yPercent: 100 });
-gsap.set(videos, { yPercent: -50 });
+// // 초기 상태 설정
+// gsap.set(outerWrappers, { yPercent: 100 });
+// gsap.set(videos, { yPercent: -50 });
 
 // 섹션 전환 함수
-function gotoSection(index, direction) {
-    index = wrap(index); // 유효한 인덱스로 설정
-    animating = true;
+// function gotoSection(index, direction) {
+//     index = wrap(index); // 유효한 인덱스로 설정
+//     animating = true;
 
-    const dFactor = direction === -1 ? -1 : 1; // 방향 설정
-    const tl = gsap.timeline({
-        defaults: { duration: 1.25, ease: 'power1.inOut' },
-        onComplete: () => (animating = false),
-    });
+//     const dFactor = direction === -1 ? -1 : 1; // 방향 설정
+//     const tl = gsap.timeline({
+//         defaults: { duration: 1.25, ease: 'power1.inOut' },
+//         onComplete: () => (animating = false),
+//     });
 
-    if (currentIndex >= 0) {
-        // 이전 섹션의 애니메이션
-        tl.to(videos[currentIndex], { yPercent: -15 * dFactor }).set(sections[currentIndex], { autoAlpha: 0 });
-    }
+//     if (currentIndex >= 0) {
+//         // 이전 섹션의 애니메이션
+//         tl.to(videos[currentIndex], { yPercent: -15 * dFactor }).set(sections[currentIndex], { autoAlpha: 0 });
+//     }
 
-    // 현재 섹션 활성화 애니메이션
-    gsap.set(sections[index], { autoAlpha: 1, zIndex: 1 });
-    tl.fromTo(outerWrappers[index], { yPercent: 100 * dFactor }, { yPercent: 0 }, 0)
-        .fromTo(videos[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0)
-        .fromTo(headings[index], { autoAlpha: 0, yPercent: 150 * dFactor }, { autoAlpha: 1, yPercent: 0, duration: 1, ease: 'power2' }, 0.2);
+//     // 현재 섹션 활성화 애니메이션
+//     gsap.set(sections[index], { autoAlpha: 1, zIndex: 1 });
+//     tl.fromTo(outerWrappers[index], { yPercent: 100 * dFactor }, { yPercent: 0 }, 0)
+//         .fromTo(videos[index], { yPercent: 15 * dFactor }, { yPercent: 0 }, 0)
+//         .fromTo(headings[index], { autoAlpha: 0, yPercent: 150 * dFactor }, { autoAlpha: 1, yPercent: 0, duration: 1, ease: 'power2' }, 0.2);
 
-    currentIndex = index;
-}
+//     currentIndex = index;
+// }
 
 // Observer 생성
-Observer.create({
-    type: 'wheel,touch,pointer',
-    wheelSpeed: -1,
-    onDown: () => !animating && gotoSection(currentIndex - 1, -1),
-    onUp: () => !animating && gotoSection(currentIndex + 1, 1),
-    tolerance: 10,
-    preventDefault: true,
-});
+// Observer.create({
+//     type: 'wheel,touch,pointer',
+//     wheelSpeed: -1,
+//     onDown: () => !animating && gotoSection(currentIndex - 1, -1),
+//     onUp: () => !animating && gotoSection(currentIndex + 1, 1),
+//     tolerance: 10,
+//     preventDefault: true,
+// });
 
-// 초기화
-gotoSection(0, 1);
+// // 초기화
+// gotoSection(0, 1);
